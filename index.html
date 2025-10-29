@@ -374,20 +374,28 @@
         <div class="container py-4">
             <div class="row text-center g-4">
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="display-4 fw-bold mb-2" data-counter="850">850</div>
-                    <p class="mb-0 text-white-50">Million AUM</p>
+                    <div class="stat-number display-4 fw-bold mb-2" data-target="500">
+                        <span class="pound">&pound;</span><span class="counter">0</span><span class="suffix">M+</span>
+                    </div>
+                    <p class="mb-0 text-white-50">Assets Under Management</p>
                 </div>
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="display-4 fw-bold mb-2" data-counter="1200">1,200+</div>
-                    <p class="mb-0 text-white-50">Satisfied Clients</p>
+                    <div class="stat-number display-4 fw-bold mb-2" data-target="2000">
+                        <span class="counter">0</span><span class="suffix">+</span>
+                    </div>
+                    <p class="mb-0 text-white-50">Happy Clients</p>
                 </div>
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="display-4 fw-bold mb-2" data-counter="23">23</div>
+                    <div class="stat-number display-4 fw-bold mb-2" data-target="25">
+                        <span class="counter">0</span><span class="suffix">+</span>
+                    </div>
                     <p class="mb-0 text-white-50">Years Experience</p>
                 </div>
                 <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="display-4 fw-bold mb-2">4.9/5</div>
-                    <p class="mb-0 text-white-50">Client Rating</p>
+                    <div class="stat-number display-4 fw-bold mb-2" data-target="4.9" data-decimals="1">
+                        <span class="counter">0</span><span class="suffix">/5</span>
+                    </div>
+                    <p class="mb-0 text-white-50">Average Rating</p>
                 </div>
             </div>
         </div>
@@ -542,6 +550,89 @@
         </div>
     </section>
 
+    <!-- Retirement Calculator Section -->
+    <section class="section-spacing bg-light">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-3">When Can You Retire?</h2>
+                    <p class="lead text-muted">Use our simple calculator to get an instant estimate</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg" data-aos="fade-up">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="calculator-widget">
+                                <!-- Current Age -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Your Current Age</label>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <input type="range" class="form-range flex-grow-1" id="currentAge" min="20" max="70" value="35">
+                                        <span class="badge bg-primary fs-5 px-3 py-2" id="currentAgeValue">35</span>
+                                    </div>
+                                </div>
+
+                                <!-- Current Savings -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Current Pension Savings</label>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <input type="range" class="form-range flex-grow-1" id="currentSavings" min="0" max="500000" step="10000" value="100000">
+                                        <span class="badge bg-primary fs-5 px-3 py-2" id="currentSavingsValue"><span class="pound">&pound;</span>100k</span>
+                                    </div>
+                                </div>
+
+                                <!-- Monthly Contribution -->
+                                <div class="mb-4">
+                                    <label class="form-label fw-semibold">Monthly Contribution</label>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <input type="range" class="form-range flex-grow-1" id="monthlyContrib" min="0" max="2000" step="50" value="500">
+                                        <span class="badge bg-primary fs-5 px-3 py-2" id="monthlyContribValue"><span class="pound">&pound;</span>500</span>
+                                    </div>
+                                </div>
+
+                                <!-- Results -->
+                                <div class="mt-5 p-4 bg-light rounded">
+                                    <h4 class="text-center mb-4">Your Retirement Projection</h4>
+                                    <div class="row text-center g-4">
+                                        <div class="col-md-4">
+                                            <div class="result-stat">
+                                                <div class="h2 text-primary mb-2" id="retirementAge">65</div>
+                                                <small class="text-muted">Possible Retirement Age</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="result-stat">
+                                                <div class="h2 text-primary mb-2" id="totalSavings"><span class="pound">&pound;</span>500k</div>
+                                                <small class="text-muted">Projected Pot</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="result-stat">
+                                                <div class="h2 text-primary mb-2" id="monthlyIncome"><span class="pound">&pound;</span>1,666</div>
+                                                <small class="text-muted">Monthly Income</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <small class="text-muted">This is an illustration only. Assumes 5% growth per year. Actual returns may vary.</small>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <a href="contact.html" class="btn btn-primary btn-lg px-5">
+                                        <i class="bi bi-calendar-check"></i> Get a Detailed Plan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="section-spacing bg-primary text-white">
         <div class="container py-4">
@@ -691,6 +782,135 @@
         // Initialize tooltips
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        // Animated Counter
+        function animateCounter(element, target, decimals = 0) {
+            const duration = 2000; // 2 seconds
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = decimals > 0 ? current.toFixed(decimals) : Math.floor(current).toLocaleString();
+            }, 16);
+        }
+
+        // Intersection Observer for Stats Counter
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(statNum => {
+                        const counter = statNum.querySelector('.counter');
+                        const target = parseFloat(statNum.dataset.target);
+                        const decimals = parseInt(statNum.dataset.decimals) || 0;
+                        animateCounter(counter, target, decimals);
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        // Observe stats section
+        const statsSection = document.querySelector('.stat-number')?.closest('section');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // 3D Tilt Effect for Bento Cards
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
+            });
+        });
+
+        // Retirement Calculator
+        const currentAge = document.getElementById('currentAge');
+        const currentSavings = document.getElementById('currentSavings');
+        const monthlyContrib = document.getElementById('monthlyContrib');
+
+        const currentAgeValue = document.getElementById('currentAgeValue');
+        const currentSavingsValue = document.getElementById('currentSavingsValue');
+        const monthlyContribValue = document.getElementById('monthlyContribValue');
+
+        const retirementAge = document.getElementById('retirementAge');
+        const totalSavings = document.getElementById('totalSavings');
+        const monthlyIncome = document.getElementById('monthlyIncome');
+
+        function formatCurrency(value) {
+            if (value >= 1000000) {
+                return (value / 1000000).toFixed(1) + 'M';
+            } else if (value >= 1000) {
+                return Math.round(value / 1000) + 'k';
+            }
+            return value.toLocaleString();
+        }
+
+        function calculateRetirement() {
+            const age = parseInt(currentAge.value);
+            const savings = parseInt(currentSavings.value);
+            const monthly = parseInt(monthlyContrib.value);
+
+            // Update display values
+            currentAgeValue.textContent = age;
+            currentSavingsValue.innerHTML = '<span class="pound">&pound;</span>' + formatCurrency(savings);
+            monthlyContribValue.innerHTML = '<span class="pound">&pound;</span>' + monthly.toLocaleString();
+
+            // Simple calculation (assumes 5% annual growth)
+            const growthRate = 0.05;
+            const targetRetirementAge = 65;
+            const yearsToRetirement = targetRetirementAge - age;
+
+            // Calculate future value
+            const monthlyRate = growthRate / 12;
+            const months = yearsToRetirement * 12;
+
+            // Future value of current savings
+            const futureValueSavings = savings * Math.pow(1 + growthRate, yearsToRetirement);
+
+            // Future value of monthly contributions
+            const futureValueContributions = monthly * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
+
+            const totalPot = futureValueSavings + futureValueContributions;
+
+            // Assumed 4% withdrawal rate
+            const annualIncome = totalPot * 0.04;
+            const monthlyPension = annualIncome / 12;
+
+            // Update results
+            retirementAge.textContent = targetRetirementAge;
+            totalSavings.innerHTML = '<span class="pound">&pound;</span>' + formatCurrency(totalPot);
+            monthlyIncome.innerHTML = '<span class="pound">&pound;</span>' + formatCurrency(monthlyPension);
+        }
+
+        // Add event listeners
+        if (currentAge) {
+            currentAge.addEventListener('input', calculateRetirement);
+            currentSavings.addEventListener('input', calculateRetirement);
+            monthlyContrib.addEventListener('input', calculateRetirement);
+
+            // Initial calculation
+            calculateRetirement();
+        }
     </script>
 </body>
 </html>
