@@ -351,6 +351,16 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 150px !important;
 }
 
+/* Container that's fluid on large screens but normal container on mobile */
+@media (min-width: 992px) {
+    .container-lg-fluid {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 /* About Page Hero Section with Background Image */
 .hero-section-about {
     position: relative;
