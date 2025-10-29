@@ -1436,6 +1436,15 @@ footer a:hover {
     align-items: center !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
     white-space: nowrap !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Ensure button is always visible on mobile, regardless of scroll */
+@media (max-width: 991.98px) {
+    .mobile-sticky-cta {
+        display: inline-flex !important;
+    }
 }
 
 /* Hide on larger screens */
@@ -1449,6 +1458,17 @@ footer a:hover {
 @media (max-width: 991.98px) {
     body {
         padding-bottom: 90px;
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    .container, .container-fluid, .row {
+        max-width: 100%;
     }
 }
 
