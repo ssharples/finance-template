@@ -932,6 +932,16 @@ footer a:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.bento-card-large {
+    padding: 3rem;
+}
+
+@media (min-width: 992px) {
+    .bento-card-large {
+        padding: 3.5rem;
+    }
+}
+
 .bento-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
