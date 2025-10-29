@@ -143,9 +143,9 @@
                             <a href="contact.html" class="btn btn-warning btn-lg px-5 fw-semibold">
                                 Book a Consultation
                             </a>
-                            <a href="#" class="btn btn-outline-primary btn-lg px-5 fw-semibold">
-                                Download Retirement Guide
-                            </a>
+                            <button type="button" class="btn btn-outline-primary btn-lg px-5 fw-semibold" data-bs-toggle="modal" data-bs-target="#riskQuizModal">
+                                <i class="bi bi-clipboard-check"></i> Take Risk Tolerance Quiz
+                            </button>
                         </div>
                         <!-- Trust Indicators -->
                         <div class="d-flex flex-wrap align-items-center gap-4 pt-3 border-top border-secondary border-opacity-25">
@@ -761,6 +761,221 @@
         </div>
     </footer>
 
+    <!-- Risk Tolerance Quiz Modal -->
+    <div class="modal fade" id="riskQuizModal" tabindex="-1" aria-labelledby="riskQuizModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="riskQuizModalLabel">
+                        <i class="bi bi-clipboard-check me-2"></i>Investment Risk Tolerance Quiz
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Quiz Introduction -->
+                    <div id="quizIntro" class="quiz-step active">
+                        <div class="text-center mb-4">
+                            <i class="bi bi-graph-up-arrow text-primary" style="font-size: 4rem;"></i>
+                            <h4 class="mt-3">Discover Your Investment Profile</h4>
+                            <p class="text-muted">Answer 5 quick questions to find out your risk tolerance and get personalized investment recommendations.</p>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg w-100" onclick="startQuiz()">
+                            Start Quiz <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Question 1 -->
+                    <div id="question1" class="quiz-step" style="display: none;">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Question 1 of 5</span>
+                                <div class="progress flex-grow-1 ms-3" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">What is your investment time horizon?</h5>
+                            <p class="text-muted small">How long do you plan to invest before needing the money?</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="1">
+                                <strong>Less than 3 years</strong><br>
+                                <small class="text-muted">Short-term goals or near retirement</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="2">
+                                <strong>3-7 years</strong><br>
+                                <small class="text-muted">Medium-term planning</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="3">
+                                <strong>7-15 years</strong><br>
+                                <small class="text-muted">Long-term wealth building</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="4">
+                                <strong>More than 15 years</strong><br>
+                                <small class="text-muted">Very long-term retirement planning</small>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div id="question2" class="quiz-step" style="display: none;">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Question 2 of 5</span>
+                                <div class="progress flex-grow-1 ms-3" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">If your investments dropped 20% in a year, what would you do?</h5>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="1">
+                                <strong>Sell everything immediately</strong><br>
+                                <small class="text-muted">I can't handle losses</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="2">
+                                <strong>Sell some to reduce risk</strong><br>
+                                <small class="text-muted">I'd be very concerned</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="3">
+                                <strong>Hold steady and wait</strong><br>
+                                <small class="text-muted">Markets go up and down</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="4">
+                                <strong>Buy more at lower prices</strong><br>
+                                <small class="text-muted">Great buying opportunity!</small>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div id="question3" class="quiz-step" style="display: none;">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Question 3 of 5</span>
+                                <div class="progress flex-grow-1 ms-3" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">What's more important to you?</h5>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="1">
+                                <strong>Protecting my money</strong><br>
+                                <small class="text-muted">I prioritize capital preservation</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="2">
+                                <strong>Steady, predictable growth</strong><br>
+                                <small class="text-muted">Balanced approach</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="3">
+                                <strong>Growing my wealth over time</strong><br>
+                                <small class="text-muted">I can handle some volatility</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="4">
+                                <strong>Maximizing returns</strong><br>
+                                <small class="text-muted">I'm willing to take risks for higher gains</small>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div id="question4" class="quiz-step" style="display: none;">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Question 4 of 5</span>
+                                <div class="progress flex-grow-1 ms-3" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">How would you describe your investment knowledge?</h5>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="1">
+                                <strong>Beginner</strong><br>
+                                <small class="text-muted">I'm new to investing</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="2">
+                                <strong>Basic understanding</strong><br>
+                                <small class="text-muted">I know the fundamentals</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="3">
+                                <strong>Intermediate</strong><br>
+                                <small class="text-muted">I have some experience</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="4">
+                                <strong>Advanced</strong><br>
+                                <small class="text-muted">I'm an experienced investor</small>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div id="question5" class="quiz-step" style="display: none;">
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Question 5 of 5</span>
+                                <div class="progress flex-grow-1 ms-3" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">What percentage of your portfolio would you invest in stocks vs. bonds?</h5>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="1">
+                                <strong>100% Bonds / Cash</strong><br>
+                                <small class="text-muted">Maximum safety</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="2">
+                                <strong>30% Stocks / 70% Bonds</strong><br>
+                                <small class="text-muted">Conservative mix</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="3">
+                                <strong>60% Stocks / 40% Bonds</strong><br>
+                                <small class="text-muted">Balanced approach</small>
+                            </button>
+                            <button class="btn btn-outline-primary text-start quiz-option" data-value="4">
+                                <strong>80-100% Stocks</strong><br>
+                                <small class="text-muted">Growth focused</small>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div id="quizResults" class="quiz-step" style="display: none;">
+                        <div class="text-center mb-4">
+                            <div class="mb-3" id="riskIcon"></div>
+                            <h4 class="mb-2">Your Risk Profile: <span id="riskProfileName" class="text-primary"></span></h4>
+                            <p class="text-muted" id="riskDescription"></p>
+                        </div>
+
+                        <div class="card bg-light border-0 mb-4">
+                            <div class="card-body">
+                                <h6 class="fw-bold mb-3">Recommended Portfolio Allocation</h6>
+                                <div id="portfolioAllocation"></div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-light border-0 mb-4">
+                            <div class="card-body">
+                                <h6 class="fw-bold mb-3">What This Means For You</h6>
+                                <ul class="mb-0" id="recommendations"></ul>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="bi bi-calendar-check"></i> Book a Consultation
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary" onclick="resetQuiz()">
+                                <i class="bi bi-arrow-repeat"></i> Retake Quiz
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Floating Contact Button -->
     <a href="contact.html" class="btn btn-warning btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; z-index: 1000;" data-bs-toggle="tooltip" title="Book Consultation">
         <i class="bi bi-calendar-event-fill fs-4"></i>
@@ -910,6 +1125,162 @@
 
             // Initial calculation
             calculateRetirement();
+        }
+
+        // Risk Tolerance Quiz
+        let quizAnswers = [];
+        let currentQuestion = 0;
+
+        function startQuiz() {
+            quizAnswers = [];
+            currentQuestion = 0;
+            document.getElementById('quizIntro').style.display = 'none';
+            document.getElementById('question1').style.display = 'block';
+
+            // Add event listeners to all quiz options
+            document.querySelectorAll('.quiz-option').forEach(btn => {
+                btn.addEventListener('click', handleAnswer);
+            });
+        }
+
+        function handleAnswer(e) {
+            const value = parseInt(e.currentTarget.dataset.value);
+            quizAnswers.push(value);
+            currentQuestion++;
+
+            // Hide current question
+            document.querySelectorAll('.quiz-step').forEach(step => {
+                step.style.display = 'none';
+            });
+
+            // Show next question or results
+            if (currentQuestion < 5) {
+                document.getElementById('question' + (currentQuestion + 1)).style.display = 'block';
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            // Calculate average score
+            const totalScore = quizAnswers.reduce((a, b) => a + b, 0);
+            const averageScore = totalScore / quizAnswers.length;
+
+            let profile = {};
+
+            if (averageScore <= 1.5) {
+                profile = {
+                    name: 'Conservative',
+                    icon: '<i class="bi bi-shield-fill-check text-success" style="font-size: 4rem;"></i>',
+                    description: 'You prioritize capital preservation and steady, predictable returns. You\'re comfortable with lower potential gains in exchange for greater security.',
+                    allocation: [
+                        { label: 'Cash & Bonds', percentage: 70, color: '#198754' },
+                        { label: 'Stocks', percentage: 20, color: '#0d6efd' },
+                        { label: 'Alternative Assets', percentage: 10, color: '#ffc107' }
+                    ],
+                    recommendations: [
+                        'Focus on government bonds and high-grade corporate bonds',
+                        'Consider cash ISAs and fixed-term savings accounts',
+                        'Limit equity exposure to 20-30% of portfolio',
+                        'Suitable for those nearing retirement or with low risk tolerance'
+                    ]
+                };
+            } else if (averageScore <= 2.5) {
+                profile = {
+                    name: 'Moderately Conservative',
+                    icon: '<i class="bi bi-bar-chart-fill text-info" style="font-size: 4rem;"></i>',
+                    description: 'You seek a balance between security and growth, willing to accept some market volatility for better returns than pure cash holdings.',
+                    allocation: [
+                        { label: 'Bonds', percentage: 50, color: '#198754' },
+                        { label: 'Stocks', percentage: 35, color: '#0d6efd' },
+                        { label: 'Alternative Assets', percentage: 15, color: '#ffc107' }
+                    ],
+                    recommendations: [
+                        'Balanced mix of bonds and dividend-paying stocks',
+                        'Consider index funds for diversified equity exposure',
+                        'Regular portfolio rebalancing recommended',
+                        'Good for medium-term goals (5-10 years)'
+                    ]
+                };
+            } else if (averageScore <= 3.5) {
+                profile = {
+                    name: 'Balanced / Moderate',
+                    icon: '<i class="bi bi-graph-up text-primary" style="font-size: 4rem;"></i>',
+                    description: 'You\'re comfortable with market fluctuations and seek to grow wealth over the long term while maintaining some stability.',
+                    allocation: [
+                        { label: 'Stocks', percentage: 60, color: '#0d6efd' },
+                        { label: 'Bonds', percentage: 30, color: '#198754' },
+                        { label: 'Alternative Assets', percentage: 10, color: '#ffc107' }
+                    ],
+                    recommendations: [
+                        'Diversified global equity portfolio',
+                        'Mix of growth and value stocks',
+                        'Consider property and commodities for diversification',
+                        'Ideal for retirement planning 10+ years away'
+                    ]
+                };
+            } else {
+                profile = {
+                    name: 'Growth / Aggressive',
+                    icon: '<i class="bi bi-rocket-takeoff-fill text-warning" style="font-size: 4rem;"></i>',
+                    description: 'You\'re willing to accept significant volatility for the potential of higher long-term returns. You have time to ride out market downturns.',
+                    allocation: [
+                        { label: 'Stocks', percentage: 80, color: '#0d6efd' },
+                        { label: 'Alternative Assets', percentage: 15, color: '#ffc107' },
+                        { label: 'Bonds', percentage: 5, color: '#198754' }
+                    ],
+                    recommendations: [
+                        'Focus on growth stocks and emerging markets',
+                        'Consider small-cap and technology sector exposure',
+                        'Minimal bond allocation for maximum growth potential',
+                        'Best for long-term investors (15+ years) with high risk tolerance'
+                    ]
+                };
+            }
+
+            // Update results display
+            document.getElementById('riskIcon').innerHTML = profile.icon;
+            document.getElementById('riskProfileName').textContent = profile.name;
+            document.getElementById('riskDescription').textContent = profile.description;
+
+            // Create portfolio allocation visualization
+            let allocationHTML = '<div class="mb-3">';
+            profile.allocation.forEach(item => {
+                allocationHTML += `
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>${item.label}</span>
+                        <strong>${item.percentage}%</strong>
+                    </div>
+                    <div class="progress mb-3" style="height: 25px;">
+                        <div class="progress-bar" role="progressbar"
+                             style="width: ${item.percentage}%; background-color: ${item.color};"
+                             aria-valuenow="${item.percentage}" aria-valuemin="0" aria-valuemax="100">
+                            ${item.percentage}%
+                        </div>
+                    </div>
+                `;
+            });
+            allocationHTML += '</div>';
+            document.getElementById('portfolioAllocation').innerHTML = allocationHTML;
+
+            // Create recommendations list
+            let recommendationsHTML = '';
+            profile.recommendations.forEach(rec => {
+                recommendationsHTML += `<li class="mb-2">${rec}</li>`;
+            });
+            document.getElementById('recommendations').innerHTML = recommendationsHTML;
+
+            // Show results
+            document.getElementById('quizResults').style.display = 'block';
+        }
+
+        function resetQuiz() {
+            quizAnswers = [];
+            currentQuestion = 0;
+            document.querySelectorAll('.quiz-step').forEach(step => {
+                step.style.display = 'none';
+            });
+            document.getElementById('quizIntro').style.display = 'block';
         }
     </script>
 </body>
