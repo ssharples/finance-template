@@ -1418,6 +1418,34 @@ footer a:hover {
     border-left: 4px solid #C9A961;
 }
 
+/* ===========================
+   Mobile Sticky CTA Button
+   =========================== */
+.mobile-sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 0 !important;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Hide on larger screens */
+@media (min-width: 992px) {
+    .mobile-sticky-cta {
+        display: none !important;
+    }
+}
+
+/* Add padding to body on mobile to prevent content being hidden behind sticky button */
+@media (max-width: 991.98px) {
+    body {
+        padding-bottom: 80px;
+    }
+}
+
 .blosm-personal-message {
     background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.03) 100%);
     border-left: 4px solid #C9A961;

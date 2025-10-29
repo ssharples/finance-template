@@ -140,7 +140,7 @@
                             Independent financial advice that puts you first. Whether it's retirement planning, pensions, or investments – we're here to help you make confident decisions about your financial future.
                         </p>
                         <div class="d-flex flex-wrap gap-3 mb-5">
-                            <a href="contact.html" class="btn btn-warning btn-lg px-5 fw-semibold">
+                            <a href="contact.html" class="btn btn-warning btn-lg px-5 fw-semibold d-none d-lg-inline-block">
                                 Book a Consultation
                             </a>
                             <button type="button" class="btn btn-outline-primary btn-lg px-5 fw-semibold" data-bs-toggle="modal" data-bs-target="#riskQuizModal">
@@ -1135,8 +1135,13 @@
         </div>
     </div>
 
+    <!-- Mobile Sticky Consultation Button -->
+    <a href="contact.html" class="mobile-sticky-cta btn btn-warning btn-lg w-100 fw-semibold shadow-lg d-lg-none">
+        <i class="bi bi-calendar-check-fill me-2"></i> Book a Consultation
+    </a>
+
     <!-- Floating Contact Button -->
-    <a href="contact.html" class="btn btn-warning btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; z-index: 1000;" data-bs-toggle="tooltip" title="Book Consultation">
+    <a href="contact.html" class="btn btn-warning btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg d-none d-lg-flex align-items-center justify-content-center" style="width: 60px; height: 60px; z-index: 1000;" data-bs-toggle="tooltip" title="Book Consultation">
         <i class="bi bi-calendar-event-fill fs-4"></i>
     </a>
 
