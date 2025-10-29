@@ -761,6 +761,17 @@
         </div>
     </footer>
 
+    <!-- Blosm Footer Bar -->
+    <div class="blosm-footer-bar">
+        <div class="container">
+            <p class="blosm-footer-text">
+                Custom demo presented for <span id="blosm-company-name">your company</span> created by
+                <a href="https://blosm.dev" target="_blank" class="blosm-link">Blosm</a>
+                <a href="#" class="blosm-feedback" data-bs-toggle="modal" data-bs-target="#blosmBookingModal">feedback?</a>
+            </p>
+        </div>
+    </div>
+
     <!-- Risk Tolerance Quiz Modal -->
     <div class="modal fade" id="riskQuizModal" tabindex="-1" aria-labelledby="riskQuizModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -970,6 +981,142 @@
                                 <i class="bi bi-arrow-repeat me-2"></i> Retake Quiz
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blosm Booking Modal -->
+    <div class="modal fade" id="blosmBookingModal" tabindex="-1" aria-labelledby="blosmBookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background: linear-gradient(135deg, #1F2839 0%, #0f1419 100%); border-bottom: 4px solid #C9A961;">
+                    <h5 class="modal-title text-white" id="blosmBookingModalLabel">
+                        <i class="bi bi-calendar-check me-2"></i>Book a Feedback Call
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <!-- Step 1: Booking Form -->
+                    <div id="blosm-step-1" class="blosm-step active">
+                        <h2 class="h4 mb-3">Schedule Your Call</h2>
+                        <p class="text-muted mb-4">Pick a time that works best for you</p>
+
+                        <form id="blosm-booking-form" class="blosm-booking-form">
+                            <input type="hidden" id="blosm-business-id" name="business_id" value="">
+
+                            <div class="mb-3">
+                                <label for="blosm-contact-name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="blosm-contact-name" name="name" placeholder="John Smith" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blosm-contact-email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="blosm-contact-email" name="email" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blosm-contact-phone" class="form-label">Phone Number (Optional)</label>
+                                <input type="tel" class="form-control" id="blosm-contact-phone" name="phone" placeholder="01772 491302">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blosm-company-name-input" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" id="blosm-company-name-input" name="company" placeholder="ABC Dental Practice" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="blosm-booking-date" class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" id="blosm-booking-date" name="date" required>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label for="blosm-booking-time" class="form-label">Preferred Time</label>
+                                    <select class="form-select" id="blosm-booking-time" name="time" required>
+                                        <option value="">Select time</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="09:30">9:30 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="10:30">10:30 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="14:30">2:30 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="15:30">3:30 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                        <option value="16:30">4:30 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="blosm-booking-timezone" class="form-label">Timezone</label>
+                                <select class="form-select" id="blosm-booking-timezone" name="timezone" required>
+                                    <option value="America/New_York">Eastern Time (ET)</option>
+                                    <option value="America/Chicago">Central Time (CT)</option>
+                                    <option value="America/Denver">Mountain Time (MT)</option>
+                                    <option value="America/Los_Angeles">Pacific Time (PT)</option>
+                                    <option value="America/Anchorage">Alaska Time (AKT)</option>
+                                    <option value="Pacific/Honolulu">Hawaii Time (HT)</option>
+                                    <option value="Europe/London">London (GMT)</option>
+                                    <option value="Europe/Paris">Paris (CET)</option>
+                                    <option value="Asia/Tokyo">Tokyo (JST)</option>
+                                    <option value="Australia/Sydney">Sydney (AEDT)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="blosm-booking-notes" class="form-label">Additional Notes (Optional)</label>
+                                <textarea class="form-control" id="blosm-booking-notes" name="notes" rows="3" placeholder="Any specific topics you'd like to discuss?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" id="blosm-submit-btn">
+                                Confirm Booking
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Confirmation -->
+                    <div id="blosm-step-2" class="blosm-step" style="display: none;">
+                        <div class="text-center mb-4">
+                            <div class="blosm-confirmation-icon mb-3">
+                                <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
+                            </div>
+                            <h2 class="h4 mb-3">You're All Set! 🎉</h2>
+                            <p class="text-muted">Your consultation has been booked successfully.</p>
+                        </div>
+
+                        <div class="blosm-confirmation-details p-4 bg-light rounded">
+                            <div class="row mb-3">
+                                <div class="col-5"><strong>📅 Date & Time:</strong></div>
+                                <div class="col-7" id="blosm-confirm-datetime">-</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-5"><strong>👤 With:</strong></div>
+                                <div class="col-7">Scott Sharples</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-5"><strong>📧 Confirmation:</strong></div>
+                                <div class="col-7">Sent to <span id="blosm-confirm-email">-</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-5"><strong>🎥 Meeting Link:</strong></div>
+                                <div class="col-7"><a href="#" id="blosm-confirm-meet-link" target="_blank">Join via Google Meet</a></div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-4" data-bs-dismiss="modal">
+                            Close
+                        </button>
+
+                        <p class="text-center text-muted small mt-3">A calendar invite has been sent to your email with all the details.</p>
                     </div>
                 </div>
             </div>
@@ -1281,6 +1428,121 @@
                 step.style.display = 'none';
             });
             document.getElementById('quizIntro').style.display = 'block';
+        }
+
+        // Blosm Booking System
+        const blosmBooking = {
+            init() {
+                // Load company name from URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const companyName = urlParams.get('company') || urlParams.get('name');
+
+                if (companyName) {
+                    document.getElementById('blosm-company-name').textContent = companyName;
+                    document.getElementById('blosm-company-name-input').value = companyName;
+                }
+
+                // Pre-populate form fields from URL
+                const email = urlParams.get('email');
+                const contactName = urlParams.get('contact_name') || urlParams.get('contact');
+                const phone = urlParams.get('phone');
+                const businessId = urlParams.get('business_id');
+
+                if (email) document.getElementById('blosm-contact-email').value = email;
+                if (contactName) document.getElementById('blosm-contact-name').value = contactName;
+                if (phone) document.getElementById('blosm-contact-phone').value = phone;
+                if (businessId) document.getElementById('blosm-business-id').value = businessId;
+
+                // Set minimum date to tomorrow
+                const dateInput = document.getElementById('blosm-booking-date');
+                if (dateInput) {
+                    const tomorrow = new Date();
+                    tomorrow.setDate(tomorrow.getDate() + 1);
+                    dateInput.min = tomorrow.toISOString().split('T')[0];
+                }
+
+                // Auto-detect timezone
+                const timezoneSelect = document.getElementById('blosm-booking-timezone');
+                if (timezoneSelect) {
+                    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    const option = Array.from(timezoneSelect.options).find(opt => opt.value === userTimezone);
+                    if (option) {
+                        timezoneSelect.value = userTimezone;
+                    }
+                }
+
+                // Set up form submission
+                const form = document.getElementById('blosm-booking-form');
+                if (form) {
+                    form.addEventListener('submit', (e) => this.handleSubmit(e));
+                }
+            },
+
+            async handleSubmit(e) {
+                e.preventDefault();
+
+                const submitBtn = document.getElementById('blosm-submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Booking...';
+
+                const formData = new FormData(e.target);
+                const data = Object.fromEntries(formData);
+
+                try {
+                    const response = await fetch('https://blosm.dev/api/booking', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        // Update confirmation details
+                        const date = new Date(data.date + 'T' + data.time);
+                        const formattedDate = date.toLocaleDateString('en-US', {
+                            weekday: 'long',
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric'
+                        });
+                        const formattedTime = date.toLocaleTimeString('en-US', {
+                            hour: 'numeric',
+                            minute: '2-digit'
+                        });
+
+                        document.getElementById('blosm-confirm-datetime').textContent = `${formattedDate} at ${formattedTime}`;
+                        document.getElementById('blosm-confirm-email').textContent = data.email;
+
+                        if (result.data && result.data.meetingLink) {
+                            document.getElementById('blosm-confirm-meet-link').href = result.data.meetingLink;
+                        }
+
+                        // Show confirmation step
+                        document.getElementById('blosm-step-1').style.display = 'none';
+                        document.getElementById('blosm-step-2').style.display = 'block';
+                    } else {
+                        alert('Booking failed: ' + (result.message || result.error || 'Please try again'));
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
+                    }
+                } catch (error) {
+                    console.error('Booking error:', error);
+                    alert('Failed to create booking. Please try again or contact scott@blosm.dev');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
+                }
+            }
+        };
+
+        // Initialize Blosm booking when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => blosmBooking.init());
+        } else {
+            blosmBooking.init();
         }
     </script>
 </body>

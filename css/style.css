@@ -1337,3 +1337,73 @@ footer a:hover {
     background-color: var(--sf-gold);
     color: white;
 }
+
+/* ===========================
+   Blosm Footer Bar Styles
+   =========================== */
+.blosm-footer-bar {
+    background: linear-gradient(135deg, #1F2839 0%, #0f1419 100%);
+    padding: 0.75rem 0;
+    text-align: center;
+    border-top: 2px solid #C9A961;
+}
+
+.blosm-footer-text {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 0.875rem;
+}
+
+.blosm-link {
+    color: #C9A961;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.blosm-link:hover {
+    color: #d4b876;
+}
+
+.blosm-feedback {
+    color: #C9A961;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.blosm-feedback:hover {
+    color: #d4b876;
+    text-decoration: underline;
+}
+
+/* Blosm Modal Styles */
+#blosmBookingModal .modal-content {
+    border-radius: 0 !important;
+    border: none;
+}
+
+#blosmBookingModal .modal-header {
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.blosm-step {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.blosm-step.active,
+.blosm-step[style*="display: block"] {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideIn 0.4s ease;
+}
+
+.blosm-confirmation-details {
+    border-left: 4px solid #C9A961;
+}
