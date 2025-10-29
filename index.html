@@ -192,49 +192,91 @@
         </div>
     </section>
 
-    <!-- Questions Section -->
+    <!-- Questions Section - Bento Grid -->
     <section class="section-spacing bg-white">
         <div class="container">
-            <div class="row mb-4">
+            <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
                     <h2 class="h3 mb-4">Questions to ask yourself...</h2>
                     <p class="text-muted mb-4">Not sure where to start? These are the questions we help our clients answer every day.</p>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
-                            <h5 class="card-title">When can I retire?</h5>
-                            <p class="small text-muted mb-0">Will I have enough money to enjoy the retirement I've planned for?</p>
+
+            <div class="bento-grid">
+                <!-- Large featured card - spans 2 columns on desktop -->
+                <div class="bento-item bento-large" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card bg-primary text-white">
+                        <div class="bento-content">
+                            <i class="bi bi-calendar-check-fill fs-1 mb-3 opacity-75"></i>
+                            <h3 class="h4 mb-3">When can I retire?</h3>
+                            <p class="mb-3">Will I have enough money to enjoy the retirement I've planned for?</p>
+                            <p class="small mb-0 opacity-75">We'll help you create a clear roadmap to your ideal retirement date with confidence.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
-                            <h5 class="card-title">Is my pension secure?</h5>
+
+                <!-- Standard card -->
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-card bg-light">
+                        <div class="bento-content">
+                            <i class="bi bi-shield-check-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="mb-3">Is my pension secure?</h5>
                             <p class="small text-muted mb-0">Are my savings protected from market dips and performing well?</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
-                            <h5 class="card-title">Am I paying too much tax?</h5>
-                            <p class="small text-muted mb-0">Could I be making better use of my tax allowances and ISAs?</p>
+
+                <!-- Standard card -->
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bento-card bg-light">
+                        <div class="bento-content">
+                            <i class="bi bi-piggy-bank-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="mb-3">Should I consolidate my pensions?</h5>
+                            <p class="small text-muted mb-0">Would bringing my pensions together save me money and simplify things?</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card border-0 bg-light h-100">
-                        <div class="card-body text-center p-4">
-                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
-                            <h5 class="card-title">Should I consolidate my pensions?</h5>
-                            <p class="small text-muted mb-0">Would bringing my pensions together save me money and simplify things?</p>
+
+                <!-- Tall card - spans 2 rows on desktop -->
+                <div class="bento-item bento-tall" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bento-card" style="background: linear-gradient(135deg, var(--sf-gold) 0%, var(--sf-gold-dark) 100%);">
+                        <div class="bento-content text-white">
+                            <i class="bi bi-receipt-cutoff fs-1 mb-3 opacity-75"></i>
+                            <h4 class="mb-3">Am I paying too much tax?</h4>
+                            <p class="mb-3">Could I be making better use of my tax allowances and ISAs?</p>
+                            <ul class="small mb-0 opacity-90" style="list-style: none; padding: 0;">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>Tax-efficient strategies</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill me-2"></i>ISA optimization</li>
+                                <li><i class="bi bi-check-circle-fill me-2"></i>Pension tax relief</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wide card - spans 2 columns -->
+                <div class="bento-item bento-wide" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bento-card bg-light">
+                        <div class="bento-content">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 text-center mb-3 mb-md-0">
+                                    <i class="bi bi-graph-up-arrow text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <h5 class="mb-2">What's the best way to invest my money?</h5>
+                                    <p class="small text-muted mb-0">Should I be in stocks, bonds, property, or a mix? We'll create a portfolio tailored to your goals and risk tolerance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard card -->
+                <div class="bento-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bento-card bg-light">
+                        <div class="bento-content">
+                            <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="mb-3">What happens to my family?</h5>
+                            <p class="small text-muted mb-0">Estate planning and protection to secure your loved ones' future.</p>
                         </div>
                     </div>
                 </div>
