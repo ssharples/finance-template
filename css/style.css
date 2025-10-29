@@ -1424,17 +1424,18 @@ footer a:hover {
 .mobile-sticky-cta {
     position: fixed !important;
     bottom: 1rem !important;
-    left: 1rem !important;
-    right: 1rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     z-index: 1050 !important;
-    border-radius: 50px !important;
-    padding: 1rem 1.5rem !important;
-    font-size: 1.1rem !important;
+    border-radius: 0 !important;
+    padding: 1rem 2rem !important;
+    font-size: 1rem !important;
     margin: 0 !important;
-    display: flex !important;
+    display: inline-flex !important;
     justify-content: center !important;
     align-items: center !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    white-space: nowrap !important;
 }
 
 /* Hide on larger screens */
