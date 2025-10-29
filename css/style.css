@@ -933,12 +933,18 @@ footer a:hover {
 }
 
 .bento-card-large {
-    padding: 3rem;
+    padding: 2.5rem 3rem;
+}
+
+@media (min-width: 768px) {
+    .bento-card-large {
+        padding: 3rem 4rem;
+    }
 }
 
 @media (min-width: 992px) {
     .bento-card-large {
-        padding: 3.5rem;
+        padding: 3.5rem 4.5rem;
     }
 }
 
