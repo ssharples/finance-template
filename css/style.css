@@ -978,6 +978,256 @@ footer a:hover {
 }
 
 /* ===========================
+   Risk Quiz Modal Styles
+   =========================== */
+.modal-content {
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.modal-dialog {
+    box-shadow: none !important;
+}
+
+.modal-header {
+    padding: 2rem;
+}
+
+.modal-body {
+    min-height: 400px;
+}
+
+/* Quiz Step Transitions */
+.quiz-step {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.quiz-step.active,
+.quiz-step[style*="display: block"] {
+    opacity: 1;
+    transform: translateX(0);
+    animation: slideIn 0.4s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Quiz Option Buttons */
+.quiz-option {
+    padding: 1.5rem 2rem;
+    border: none;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.quiz-option:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background: var(--sf-navy);
+    border-left-color: var(--sf-gold);
+    color: white;
+}
+
+.quiz-option:hover strong,
+.quiz-option:hover small {
+    color: white;
+}
+
+.quiz-option:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar Styling */
+.modal .progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    overflow: hidden;
+    height: 6px;
+}
+
+.modal .progress-bar {
+    transition: width 0.6s ease;
+    border-radius: 0;
+    background: linear-gradient(90deg, var(--sf-gold) 0%, var(--sf-gold-dark) 100%);
+}
+
+/* Question Styling */
+.modal h5 {
+    color: var(--sf-navy);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.modal .badge {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    background: var(--sf-gold);
+    color: var(--sf-navy);
+    font-weight: 600;
+}
+
+/* Results Cards */
+.modal .card {
+    border-radius: 0;
+    border: none;
+    border-left: 4px solid var(--sf-gold);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Portfolio Allocation Progress Bars */
+#portfolioAllocation .progress {
+    border-radius: 0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#portfolioAllocation .progress-bar {
+    font-weight: 600;
+    line-height: 25px;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Animations */
+#riskIcon i {
+    animation: iconPop 0.6s ease;
+}
+
+@keyframes iconPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Button Styling */
+.modal .btn-lg {
+    padding: 1rem 2.5rem;
+    border-radius: 0;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.modal .btn-primary {
+    background: linear-gradient(135deg, var(--sf-gold) 0%, var(--sf-gold-dark) 100%);
+    color: var(--sf-navy);
+}
+
+.modal .btn-primary:hover {
+    background: var(--sf-gold-dark);
+    color: white;
+}
+
+.modal .btn-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.modal .btn-lg:active {
+    transform: translateY(0);
+}
+
+.modal .btn-outline-secondary {
+    border: 2px solid var(--sf-gold);
+    color: var(--sf-gold);
+}
+
+.modal .btn-outline-secondary:hover {
+    background: var(--sf-gold);
+    border-color: var(--sf-gold);
+    color: var(--sf-navy);
+}
+
+/* Intro Screen */
+#quizIntro i {
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Results List */
+#recommendations li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--sf-navy);
+}
+
+#recommendations li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--sf-primary);
+    font-weight: bold;
+}
+
+/* Spacing Improvements */
+.modal-body .mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+.modal .d-grid.gap-2 {
+    gap: 1rem !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+
+    .modal-header {
+        padding: 1.5rem;
+    }
+
+    .quiz-option {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .modal .btn-lg {
+        padding: 0.875rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ===========================
    Print Styles
    =========================== */
 @media print {
