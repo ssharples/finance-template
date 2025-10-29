@@ -1407,3 +1407,21 @@ footer a:hover {
 .blosm-confirmation-details {
     border-left: 4px solid #C9A961;
 }
+
+.blosm-personal-message {
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.08) 0%, rgba(201, 169, 97, 0.03) 100%);
+    border-left: 4px solid #C9A961;
+    border-radius: 8px;
+}
+
+.blosm-phone-link {
+    color: #C9A961;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.blosm-phone-link:hover {
+    color: #d4b876;
+    text-decoration: underline;
+}
