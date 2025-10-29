@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life insurance and protection planning. Secure your family's financial future with expert advice on life cover, critical illness, and income protection.">
+    <title>Protection & Life Insurance | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7 text-white" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Protect What Matters Most
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        None of us like to think about worst-case scenarios. But what would happen to your family if you couldn't work – or worse? The right protection gives you peace of mind that they'll be looked after, whatever life throws at you.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="contact.html" class="btn btn-warning btn-lg px-4 fw-semibold">
+                            <i class="bi bi-calendar-check-fill"></i> Get a Quote
+                        </a>
+                        <a href="tel:02012345678" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                    <img src="assets/images/protection-planning.jpg" alt="Protection Planning" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="h3 mb-4">Questions to ask yourself...</h2>
+                    <p class="text-muted mb-4">Difficult questions, but important ones. We help you find the right answers.</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">What would happen if I died tomorrow?</h6>
+                            <p class="small text-muted mb-0">Could your family afford the mortgage, bills, and everyday costs without your income?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Am I covered if I get seriously ill?</h6>
+                            <p class="small text-muted mb-0">Critical illness affects 1 in 2 people. Would you cope financially with a cancer diagnosis?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">What if I can't work for months?</h6>
+                            <p class="small text-muted mb-0">Statutory sick pay is just <span class="pound">&pound;</span>109/week. How long could you survive on that?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Is my business protected?</h6>
+                            <p class="small text-muted mb-0">If you or your business partner died, could the business survive? Could you buy out their share?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">How much cover do I actually need?</h6>
+                            <p class="small text-muted mb-0">Too little leaves your family struggling. Too much wastes money. We'll help you get it right.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Am I paying too much?</h6>
+                            <p class="small text-muted mb-0">We search the whole market to find you the best cover at the most competitive price.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">Protection Isn't Just About Death</h2>
+                    <p class="lead mb-4" data-aos="fade-up">When people think of life insurance, they think about dying. But actually, the bigger risk for most of us is being unable to work due to illness or injury.</p>
+
+                    <p class="mb-4" data-aos="fade-up">Every year, thousands of families face financial hardship not because someone died, but because someone got sick and couldn't earn. Cancer, heart attacks, strokes, mental health issues – they don't just happen to other people.</p>
+
+                    <p class="mb-4" data-aos="fade-up">The good news? With the right protection in place, you can ensure your family stays financially secure no matter what happens. And contrary to popular belief, it doesn't have to cost a fortune.</p>
+
+                    <div class="alert alert-info mb-5" data-aos="fade-up">
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-info-circle-fill fs-3 me-3"></i>
+                            <div>
+                                <h5 class="alert-heading mb-2">Did you know?</h5>
+                                <p class="mb-0">Life insurance for a healthy 30-year-old non-smoker costs around <span class="pound">&pound;</span>10-15/month for <span class="pound">&pound;</span>200,000 of cover. That's less than a couple of takeaway coffees a week to give your family complete financial security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Types of Protection -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">Types of Protection We Arrange</h2>
+
+                    <div class="row g-4">
+                        <!-- Life Insurance -->
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-shield-fill-check text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Life Insurance</h3>
+                                    </div>
+                                    <p class="mb-3">A lump sum paid to your family if you die during the policy term. Essential for anyone with dependents, a mortgage, or debts.</p>
+                                    <ul class="small">
+                                        <li><strong>Level term:</strong> Fixed cover amount for a set period</li>
+                                        <li><strong>Decreasing term:</strong> Cover reduces over time (ideal for mortgages)</li>
+                                        <li><strong>Increasing term:</strong> Cover rises with inflation</li>
+                                        <li><strong>Whole of life:</strong> Covers you for life, not just a term</li>
+                                        <li><strong>Family income benefit:</strong> Regular income instead of lump sum</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Paying off the mortgage, replacing lost income, covering funeral costs</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Critical Illness Cover -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-heart-pulse-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Critical Illness Cover</h3>
+                                    </div>
+                                    <p class="mb-3">A tax-free lump sum if you're diagnosed with a serious illness like cancer, heart attack, or stroke. Pays out while you're still alive.</p>
+                                    <ul class="small">
+                                        <li>Covers 50+ serious conditions</li>
+                                        <li>Additional payment cover for less severe conditions</li>
+                                        <li>Children's critical illness cover included</li>
+                                        <li>Can be added to life insurance or standalone</li>
+                                        <li>No restrictions on how you use the money</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Covering treatment costs, adapting your home, replacing income during recovery</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Income Protection -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-cash-coin text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Income Protection</h3>
+                                    </div>
+                                    <p class="mb-3">Regular monthly income if you can't work due to illness or injury. Pays out until you return to work, retire, or the policy ends.</p>
+                                    <ul class="small">
+                                        <li>Covers up to 50-70% of your gross income</li>
+                                        <li>Choice of deferred periods (4, 13, 26, or 52 weeks)</li>
+                                        <li>Own occupation or any occupation definitions</li>
+                                        <li>Covers most illnesses and injuries (physical and mental)</li>
+                                        <li>Premiums can often be offset against tax for self-employed</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Self-employed, anyone without sick pay, sole breadwinners</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Protection -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-building text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Business Protection</h3>
+                                    </div>
+                                    <p class="mb-3">Specialist cover for business owners, partners, and key employees to protect your company.</p>
+                                    <ul class="small">
+                                        <li><strong>Shareholder protection:</strong> Fund to buy out deceased partner's share</li>
+                                        <li><strong>Key person insurance:</strong> Cover if crucial employee dies/becomes ill</li>
+                                        <li><strong>Loan protection:</strong> Repay business debts if you die</li>
+                                        <li><strong>Business overhead protection:</strong> Keep business running if you can't work</li>
+                                        <li>Premiums often tax-deductible as business expense</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Business owners, partners, companies with key staff</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Relevant Life Insurance -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-briefcase-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Relevant Life Insurance</h3>
+                                    </div>
+                                    <p class="mb-3">Tax-efficient death-in-service benefit for company directors and employees, paid for by the business.</p>
+                                    <ul class="small">
+                                        <li>No National Insurance for employee or employer</li>
+                                        <li>Corporation tax-deductible premiums</li>
+                                        <li>Pays out outside of estate (IHT-free)</li>
+                                        <li>Individual policy (not group scheme)</li>
+                                        <li>Can include critical illness cover</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Company directors, small business employees, high earners</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Over 50s Plans -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-calendar-check text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Over 50s Life Insurance</h3>
+                                    </div>
+                                    <p class="mb-3">Guaranteed acceptance life insurance for ages 50-85, designed to cover funeral costs.</p>
+                                    <ul class="small">
+                                        <li>No medical questions or examinations</li>
+                                        <li>Cover from <span class="pound">&pound;</span>1,000 to <span class="pound">&pound;</span>25,000</li>
+                                        <li>Fixed monthly premiums for life</li>
+                                        <li>Waiting period (usually 12-24 months) for natural death</li>
+                                        <li>Useful if you can't get standard life insurance</li>
+                                    </ul>
+                                    <p class="small text-muted mb-0"><strong>Best for:</strong> Covering funeral expenses, leaving a small legacy, those with health issues</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Much Do You Need? -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">How Much Cover Do You Need?</h2>
+
+                    <div class="card border-0 shadow-sm mb-4" data-aos="fade-up">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold mb-3">Quick Calculation Tool</h4>
+                            <p class="text-muted mb-4">Use this simple calculator to get a rough idea of how much life insurance you might need:</p>
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Outstanding mortgage</label>
+                                    <input type="number" class="form-control" id="mortgage" placeholder="£0">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Other debts (loans, credit cards)</label>
+                                    <input type="number" class="form-control" id="debts" placeholder="£0">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Annual income to replace</label>
+                                    <input type="number" class="form-control" id="income" placeholder="£0">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Number of years to provide income</label>
+                                    <input type="number" class="form-control" id="years" placeholder="10">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Funeral costs</label>
+                                    <input type="number" class="form-control" id="funeral" placeholder="£5000">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Education fund for children</label>
+                                    <input type="number" class="form-control" id="education" placeholder="£0">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-lg w-100" onclick="calculateCover()">
+                                        <i class="bi bi-calculator"></i> Calculate Recommended Cover
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="alert alert-success d-none" id="result">
+                                        <h5 class="alert-heading">Recommended Cover Amount:</h5>
+                                        <p class="display-6 fw-bold mb-2" id="coverAmount">&pound;0</p>
+                                        <p class="small mb-0">This is a rough estimate. Book a free consultation for a detailed protection review.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="text-center">
+                                <i class="bi bi-house-fill text-primary fs-1 mb-3"></i>
+                                <h4 class="h6 fw-bold mb-2">Mortgage Protection</h4>
+                                <p class="small text-muted mb-0">At minimum, cover your mortgage so your family can stay in their home</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="text-center">
+                                <i class="bi bi-currency-pound text-primary fs-1 mb-3"></i>
+                                <h4 class="h6 fw-bold mb-2">Income Replacement</h4>
+                                <p class="small text-muted mb-0">10x your annual salary is a common rule of thumb for replacing income</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-center">
+                                <i class="bi bi-book-fill text-primary fs-1 mb-3"></i>
+                                <h4 class="h6 fw-bold mb-2">Future Expenses</h4>
+                                <p class="small text-muted mb-0">Don't forget education costs, weddings, or other major future expenses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Use an Advisor -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">Why Use an Advisor for Protection?</h2>
+
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-search text-primary fs-1 mb-3"></i>
+                                    <h4 class="h5 fw-bold mb-3">Whole Market Access</h4>
+                                    <p class="small mb-0">We search 100+ insurers to find you the best cover at the most competitive price. Comparison sites only show a fraction of what's available.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-file-medical text-primary fs-1 mb-3"></i>
+                                    <h4 class="h5 fw-bold mb-3">Medical History Support</h4>
+                                    <p class="small mb-0">Got a medical condition? We know which insurers are most likely to accept you and can present your case in the best light to get you covered.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-chat-square-text text-primary fs-1 mb-3"></i>
+                                    <h4 class="h5 fw-bold mb-3">Claims Support</h4>
+                                    <p class="small mb-0">If the worst happens, we'll help your family navigate the claims process and make sure they get the payout they're entitled to.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4">Get a Free, No-Obligation Quote</h2>
+                    <p class="lead mb-4">Find out how much cover you need and how much it'll cost. We'll search the whole market to find you the best deal – and there's no obligation to buy.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:02012345678" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg px-5">
+                            <i class="bi bi-envelope-fill"></i> Request a Quote
+                        </a>
+                    </div>
+                    <p class="small text-muted mt-4 mb-0">Most quotes provided within 24 hours. No medical required for most applicants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="mb-3">Independent financial advice that puts you first. FCA regulated and committed to helping you achieve your financial goals.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50">Pension Advice</a></li>
+                        <li class="mb-2"><a href="estate-planning.html" class="text-white-50">Estate Planning</a></li>
+                        <li class="mb-2"><a href="protection.html" class="text-white-50">Protection & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> 020 1234 5678</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> hello@sterlingfa.co.uk</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 123 Financial District<br><span class="ms-4">London, EC1A 1BB</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-lg-8 small text-white-50">
+                    <p class="mb-2"><strong>Important Information:</strong> Sterling Financial Advisors is authorised and regulated by the Financial Conduct Authority (FCA Reference: 123456). The value of investments can go down as well as up. Protection policies have no cash value and may not pay out if premiums are not maintained.</p>
+                    <p class="mb-0">&copy; 2024 Sterling Financial Advisors. All rights reserved. | <a href="#" class="text-white-50">Privacy Policy</a> | <a href="#" class="text-white-50">Terms & Conditions</a> | <a href="#" class="text-white-50">Complaints Procedure</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Protection calculator
+        function calculateCover() {
+            const mortgage = parseFloat(document.getElementById('mortgage').value) || 0;
+            const debts = parseFloat(document.getElementById('debts').value) || 0;
+            const income = parseFloat(document.getElementById('income').value) || 0;
+            const years = parseFloat(document.getElementById('years').value) || 10;
+            const funeral = parseFloat(document.getElementById('funeral').value) || 5000;
+            const education = parseFloat(document.getElementById('education').value) || 0;
+
+            const total = mortgage + debts + (income * years) + funeral + education;
+
+            document.getElementById('coverAmount').textContent = '<span class="pound">&pound;</span>' + total.toLocaleString();
+            document.getElementById('result').classList.remove('d-none');
+        }
+    </script>
+</body>
+</html>

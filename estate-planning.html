@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert estate planning and will writing services. Protect your wealth, minimize inheritance tax, and ensure your wishes are carried out. Free consultation.">
+    <title>Estate Planning & Wills | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7 text-white" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Protect Your Legacy, Secure Your Family's Future
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        Nobody likes thinking about what happens when they're gone. But with the right estate plan, you can have peace of mind knowing your loved ones will be looked after – and your wishes will be carried out.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="contact.html" class="btn btn-warning btn-lg px-4 fw-semibold">
+                            <i class="bi bi-calendar-check-fill"></i> Book Free Consultation
+                        </a>
+                        <a href="tel:02012345678" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                    <img src="assets/images/estate-planning.jpg" alt="Estate Planning" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="h3 mb-4">Questions to ask yourself...</h2>
+                    <p class="text-muted mb-4">These are the questions we help our clients answer every day when it comes to estate planning.</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Do I have an up-to-date will?</h6>
+                            <p class="small text-muted mb-0">If you don't have a will, the government decides what happens to your estate. Is that what you want?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Will my family have to pay inheritance tax?</h6>
+                            <p class="small text-muted mb-0">With proper planning, you can significantly reduce – or even eliminate – the IHT bill on your estate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Who will look after my children?</h6>
+                            <p class="small text-muted mb-0">Your will lets you appoint guardians and set up trusts to protect your children's financial future.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Am I giving money away tax-efficiently?</h6>
+                            <p class="small text-muted mb-0">Gifts made during your lifetime can reduce inheritance tax, but timing and amount matter.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">How do I pass on my business?</h6>
+                            <p class="small text-muted mb-0">Business succession planning ensures your company continues smoothly and tax-efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">What happens if I lose mental capacity?</h6>
+                            <p class="small text-muted mb-0">Lasting Powers of Attorney let you choose who makes decisions about your finances and health.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">Make Sure Your Wishes Are Carried Out</h2>
+                    <p class="lead mb-4" data-aos="fade-up">Estate planning isn't just about tax – though that's important. It's about making sure the people you care about are looked after, and that your hard-earned wealth goes where you want it to go.</p>
+
+                    <p class="mb-4" data-aos="fade-up">More than half of UK adults don't have a will. If you're one of them, the law decides who inherits your estate – and it might not be who you'd choose. Your unmarried partner gets nothing. Your stepchildren get nothing. And if you have young children, the court decides who looks after them.</p>
+
+                    <p class="mb-4" data-aos="fade-up">But even if you do have a will, when did you last review it? Life changes – marriages, divorces, births, deaths, house moves, new businesses. Your will needs to keep up.</p>
+
+                    <div class="alert alert-info mb-5" data-aos="fade-up">
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-info-circle-fill fs-3 me-3"></i>
+                            <div>
+                                <h5 class="alert-heading mb-2">Did you know?</h5>
+                                <p class="mb-0">Inheritance tax is charged at 40% on estates worth more than <span class="pound">&pound;</span>325,000 (or <span class="pound">&pound;</span>500,000 if you're leaving your home to children/grandchildren). With proper planning, many people can reduce or eliminate this tax bill entirely.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Can Help With -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">How We Can Help</h2>
+
+                    <div class="row g-4">
+                        <!-- Will Writing -->
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-file-earmark-text-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Will Writing & Review</h3>
+                                    </div>
+                                    <p class="mb-3">We'll make sure you have a legally valid will that reflects your current wishes and circumstances.</p>
+                                    <ul class="small">
+                                        <li>Single and mirror wills for couples</li>
+                                        <li>Appointing executors and guardians</li>
+                                        <li>Setting up trusts for children or vulnerable beneficiaries</li>
+                                        <li>Specific bequests and charitable donations</li>
+                                        <li>Regular reviews to keep your will current</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IHT Planning -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-cash-stack text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Inheritance Tax Planning</h3>
+                                    </div>
+                                    <p class="mb-3">We'll help you minimize the tax your family pays, using legitimate planning strategies.</p>
+                                    <ul class="small">
+                                        <li>Assessing your potential IHT liability</li>
+                                        <li>Lifetime gift strategies (PETs, annual exemptions)</li>
+                                        <li>Trust planning for wealth protection</li>
+                                        <li>Business Property Relief and Agricultural Property Relief</li>
+                                        <li>Life insurance to cover IHT bills</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trusts -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-shield-lock-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Trust Planning</h3>
+                                    </div>
+                                    <p class="mb-3">Trusts give you control over how and when your assets are distributed.</p>
+                                    <ul class="small">
+                                        <li>Discretionary trusts for flexibility</li>
+                                        <li>Life interest trusts for second marriages</li>
+                                        <li>Trusts for vulnerable beneficiaries</li>
+                                        <li>Bare trusts for children and grandchildren</li>
+                                        <li>Business succession trusts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Powers of Attorney -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-person-check-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Lasting Powers of Attorney</h3>
+                                    </div>
+                                    <p class="mb-3">Don't leave decisions about your money and health to chance. Choose who you trust.</p>
+                                    <ul class="small">
+                                        <li>Property and Financial Affairs LPA</li>
+                                        <li>Health and Welfare LPA</li>
+                                        <li>Registering with the Office of the Public Guardian</li>
+                                        <li>Reviewing and updating existing LPAs</li>
+                                        <li>Court of Protection applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Intergenerational Wealth -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-people-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Intergenerational Planning</h3>
+                                    </div>
+                                    <p class="mb-3">Help your children and grandchildren without losing control of your wealth.</p>
+                                    <ul class="small">
+                                        <li>Helping with house deposits tax-efficiently</li>
+                                        <li>Education funding strategies</li>
+                                        <li>Junior ISAs and pensions for grandchildren</li>
+                                        <li>Protecting assets from divorce and creditors</li>
+                                        <li>Family governance and wealth education</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Succession -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-building text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Business Succession</h3>
+                                    </div>
+                                    <p class="mb-3">Ensure your business continues smoothly when you retire or pass away.</p>
+                                    <ul class="small">
+                                        <li>Exit planning for business owners</li>
+                                        <li>Share transfer strategies</li>
+                                        <li>Partnership protection insurance</li>
+                                        <li>Key person insurance</li>
+                                        <li>Management buyout planning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">Our Estate Planning Process</h2>
+
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">1</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Initial Consultation</h4>
+                                <p class="text-muted mb-0">We'll discuss your family situation, assets, and goals. This helps us understand what you're trying to achieve and who you need to protect.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">2</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Analysis & Planning</h4>
+                                <p class="text-muted mb-0">We'll calculate your potential inheritance tax liability and create a comprehensive estate plan that minimizes tax while protecting your loved ones.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">3</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Implementation</h4>
+                                <p class="text-muted mb-0">We'll coordinate with solicitors, accountants, and other professionals to put your estate plan in place – and review it regularly as your circumstances change.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Mistakes -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">Common Estate Planning Mistakes</h2>
+
+                    <div class="accordion" id="mistakesAccordion">
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#mistake1">
+                                    Not having a will at all
+                                </button>
+                            </h2>
+                            <div id="mistake1" class="accordion-collapse collapse show" data-bs-parent="#mistakesAccordion">
+                                <div class="accordion-body">
+                                    <p>If you die without a will (called dying "intestate"), the law decides who gets what. Your unmarried partner gets nothing. Your stepchildren get nothing. And if you have children under 18, the court decides who looks after them.</p>
+                                    <p class="mb-0"><strong>The fix:</strong> Make a will. It doesn't have to be complicated or expensive, but it does need to exist.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake2">
+                                    Using a DIY will kit
+                                </button>
+                            </h2>
+                            <div id="mistake2" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                                <div class="accordion-body">
+                                    <p>DIY wills are cheap, but they're often invalid due to incorrect execution or ambiguous wording. This can lead to expensive legal disputes that cost far more than a professionally-drafted will.</p>
+                                    <p class="mb-0"><strong>The fix:</strong> Use a qualified professional to draft and witness your will properly.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake3">
+                                    Not reviewing your will after major life events
+                                </button>
+                            </h2>
+                            <div id="mistake3" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                                <div class="accordion-body">
+                                    <p>Marriage automatically revokes your will (unless it specifically mentions your upcoming marriage). Divorce doesn't revoke it, but removes your ex-spouse as a beneficiary. New children, new houses, new assets – all need to be reflected in your will.</p>
+                                    <p class="mb-0"><strong>The fix:</strong> Review your will every 3-5 years, and always after marriage, divorce, births, or significant changes in assets.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake4">
+                                    Ignoring inheritance tax
+                                </button>
+                            </h2>
+                            <div id="mistake4" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                                <div class="accordion-body">
+                                    <p>Many people think inheritance tax only affects the very wealthy. But with house prices rising, more "ordinary" families are being caught out. A <span class="pound">&pound;</span>500,000 house plus a <span class="pound">&pound;</span>200,000 pension could easily trigger IHT.</p>
+                                    <p class="mb-0"><strong>The fix:</strong> Calculate your potential IHT bill and consider strategies like lifetime gifts, trusts, or life insurance to cover the cost.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mistake5">
+                                    Leaving everything to your spouse
+                                </button>
+                            </h2>
+                            <div id="mistake5" class="accordion-collapse collapse" data-bs-parent="#mistakesAccordion">
+                                <div class="accordion-body">
+                                    <p>While everything passing to a spouse is inheritance tax-free, it can actually increase the tax bill when the second spouse dies. It can also cause problems if your spouse remarries or develops dementia.</p>
+                                    <p class="mb-0"><strong>The fix:</strong> Consider using trusts or making use of both partners' tax-free allowances to minimize the overall tax burden.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4">Put the Kettle On and Let's Talk</h2>
+                    <p class="lead mb-4">Estate planning doesn't have to be morbid or complicated. We'll help you create a plan that gives you peace of mind – and protects the people you care about.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:02012345678" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg px-5">
+                            <i class="bi bi-calendar-check-fill"></i> Book Free Consultation
+                        </a>
+                    </div>
+                    <p class="small text-muted mt-4 mb-0">Initial consultation is completely free with no obligation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="mb-3">Independent financial advice that puts you first. FCA regulated and committed to helping you achieve your financial goals.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50">Pension Advice</a></li>
+                        <li class="mb-2"><a href="estate-planning.html" class="text-white-50">Estate Planning</a></li>
+                        <li class="mb-2"><a href="protection.html" class="text-white-50">Protection & Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> 020 1234 5678</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> hello@sterlingfa.co.uk</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 123 Financial District<br><span class="ms-4">London, EC1A 1BB</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-lg-8 small text-white-50">
+                    <p class="mb-2"><strong>Important Information:</strong> Sterling Financial Advisors is authorised and regulated by the Financial Conduct Authority (FCA Reference: 123456). Estate planning and will writing services are not regulated by the FCA. Tax treatment depends on individual circumstances and may be subject to change.</p>
+                    <p class="mb-0">&copy; 2024 Sterling Financial Advisors. All rights reserved. | <a href="#" class="text-white-50">Privacy Policy</a> | <a href="#" class="text-white-50">Terms & Conditions</a> | <a href="#" class="text-white-50">Complaints Procedure</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

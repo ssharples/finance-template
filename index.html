@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert financial planning and investment advice in the UK. FCA regulated independent advisors specializing in pensions, investments, and retirement planning. Book your free consultation.">
+    <title>Sterling Financial Advisors | Independent Financial Advisor | FCA Regulated</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-home position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="hero-text-box bg-white p-5 shadow">
+                        <div class="badge bg-success mb-3 px-3 py-2">
+                            <i class="bi bi-shield-check"></i> FCA Regulated | Ref: 123456
+                        </div>
+                        <h1 class="display-3 fw-bold mb-4 text-primary">
+                            We can't predict the future, but we can help you shape it
+                        </h1>
+                        <p class="lead mb-4 fs-5 text-muted">
+                            Independent financial advice that puts you first. Whether it's retirement planning, pensions, or investments – we're here to help you make confident decisions about your financial future.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mb-5">
+                            <a href="contact.html" class="btn btn-warning btn-lg px-5 fw-semibold">
+                                Book a Consultation
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg px-5 fw-semibold">
+                                Download Retirement Guide
+                            </a>
+                        </div>
+                        <!-- Trust Indicators -->
+                        <div class="d-flex flex-wrap align-items-center gap-4 pt-3 border-top border-secondary border-opacity-25">
+                            <span class="text-muted"><i class="bi bi-award-fill text-warning"></i> <strong>20+</strong> Years Experience</span>
+                            <span class="text-muted"><i class="bi bi-people-fill text-warning"></i> <strong>1,200+</strong> Clients</span>
+                            <span class="text-muted"><i class="bi bi-star-fill text-warning"></i> <strong>4.9/5</strong> Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0" data-aos="fade-left">
+                    <!-- Image removed as it's now the background -->
+                </div>
+            </div>
+        </div>
+        <!-- Gradient Overlay -->
+        <div class="position-absolute bottom-0 start-0 w-100" style="height: 150px; background: linear-gradient(to bottom, transparent, white);"></div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="py-2 bg-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="authority-logo-container">
+                        <img src="assets/images/fca-logo-social-media.jpg" alt="FCA Regulated" class="authority-logo opacity-75">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="authority-logo-container">
+                        <img src="assets/images/cfp-logo-png-transparent.png" alt="Certified Financial Planner" class="authority-logo opacity-75">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="authority-logo-container">
+                        <img src="assets/images/Cfa-institute-logo.svg.png" alt="CFA Charter" class="authority-logo opacity-75">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="authority-logo-container">
+                        <img src="assets/images/Logo_for_the_Chartered_Institute_for_Securities_&_Investment.jpg" alt="CISI Member" class="authority-logo opacity-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="section-spacing bg-white">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="h3 mb-4">Questions to ask yourself...</h2>
+                    <p class="text-muted mb-4">Not sure where to start? These are the questions we help our clients answer every day.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="card-title">When can I retire?</h5>
+                            <p class="small text-muted mb-0">Will I have enough money to enjoy the retirement I've planned for?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="card-title">Is my pension secure?</h5>
+                            <p class="small text-muted mb-0">Are my savings protected from market dips and performing well?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="card-title">Am I paying too much tax?</h5>
+                            <p class="small text-muted mb-0">Could I be making better use of my tax allowances and ISAs?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 bg-light h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-question-circle-fill text-primary fs-1 mb-3"></i>
+                            <h5 class="card-title">Should I consolidate my pensions?</h5>
+                            <p class="small text-muted mb-0">Would bringing my pensions together save me money and simplify things?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-spacing bg-light" id="services">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-3">How We Can Help</h2>
+                    <p class="lead text-muted">Tailored financial advice that puts your needs first</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/retirement-planning.jpg" alt="Retirement Planning" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Retirement Planning</h3>
+                            <p class="text-muted mb-4">Planning for the future today could be the difference between a comfortable retirement or one full of challenges. We'll help you get it right.</p>
+                            <a href="services.html#retirement" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/investment-management.jpg" alt="Investment Management" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Investment Management</h3>
+                            <p class="text-muted mb-4">Make your money work harder for you. We create portfolios that match your goals and risk appetite – no jargon, just clear advice.</p>
+                            <a href="services.html#investment" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/pension-advice.jpg" alt="Pension Advice" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Pension Advice</h3>
+                            <p class="text-muted mb-4">Multiple pensions from different jobs? We'll assess whether consolidating them makes sense for you – and could even save you from costly mistakes.</p>
+                            <a href="services.html#pension" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/tax-planning.jpg" alt="Tax Planning" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Tax Planning</h3>
+                            <p class="text-muted mb-4">Minimize tax liabilities through efficient planning strategies and allowance optimization.</p>
+                            <a href="services.html#tax" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/estate-planning.jpg" alt="Estate Planning" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Estate Planning</h3>
+                            <p class="text-muted mb-4">Protect your legacy with inheritance tax planning and wealth transfer strategies.</p>
+                            <a href="services.html#estate" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <img src="assets/images/protection-planning.jpg" alt="Protection Planning" class="card-img-top">
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Protection Planning</h3>
+                            <p class="text-muted mb-4">Safeguard your family's future with life insurance, critical illness, and income protection.</p>
+                            <a href="services.html#protection" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="section-spacing bg-primary text-white">
+        <div class="container py-4">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="display-4 fw-bold mb-2" data-counter="850">850</div>
+                    <p class="mb-0 text-white-50">Million AUM</p>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="display-4 fw-bold mb-2" data-counter="1200">1,200+</div>
+                    <p class="mb-0 text-white-50">Satisfied Clients</p>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="display-4 fw-bold mb-2" data-counter="23">23</div>
+                    <p class="mb-0 text-white-50">Years Experience</p>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="display-4 fw-bold mb-2">4.9/5</div>
+                    <p class="mb-0 text-white-50">Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-spacing bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <img src="assets/images/about-us.jpg" alt="Why Choose Sterling Financial" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="display-5 fw-bold mb-4">The Value of Financial Advice</h2>
+                    <p class="lead text-muted mb-4">You really can't put a price on solid financial advice. Or can you?</p>
+
+                    <div class="alert alert-info mb-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-graph-up-arrow fs-2 me-3"></i>
+                            <div>
+                                <h5 class="alert-heading mb-1"><span class="pound">&pound;</span>47,000 Better Off</h5>
+                                <p class="mb-0 small">Research by ILC and Royal London shows that people are on average over <span class="pound">&pound;</span>47,000 better off over 10 years with professional financial advice.*</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="bi bi-check-lg fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-2">Completely Independent</h5>
+                            <p class="text-muted mb-0">We're not tied to any provider, which means we can search the whole market to find what's right for you</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="bi bi-check-lg fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-2">Advice That Fits Your Life</h5>
+                            <p class="text-muted mb-0">No need to visit an office. We offer telephone and video appointments early morning, lunchtime, or evening – whatever works for you</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="bi bi-check-lg fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mb-2">Expert Qualifications</h5>
+                            <p class="text-muted mb-0">All our advisers hold professional qualifications (CFP®, CFA®) and years of real-world experience</p>
+                        </div>
+                    </div>
+
+                    <p class="small text-muted mb-3">*Source: ilcuk.org.uk, ILC and Royal London research on the value of financial advice</p>
+
+                    <a href="contact.html" class="btn btn-primary btn-lg">Speak to an Adviser <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-spacing bg-white">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
+                    <p class="lead text-muted">Don't just take our word for it - hear from our satisfied clients</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="mb-4">"Sterling Financial helped me consolidate my pensions and create a clear retirement plan. Their expertise gave me confidence in my financial future."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://placehold.co/60x60/1F2839/FFFFFF?text=JM" alt="Client" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">James Morrison</h6>
+                                    <small class="text-muted">Retired Teacher</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="mb-4">"Excellent service from start to finish. They took time to understand my needs and provided clear, practical advice on tax-efficient investing."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://placehold.co/60x60/009FD7/FFFFFF?text=SC" alt="Client" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Sarah Chen</h6>
+                                    <small class="text-muted">Business Owner</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="mb-4">"Professional, knowledgeable, and always available when I have questions. Their inheritance tax planning saved our family thousands."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://placehold.co/60x60/B69D74/1F2839?text=RH" alt="Client" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Robert Hughes</h6>
+                                    <small class="text-muted">Property Developer</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <small class="text-muted">Testimonials may not be representative of all client experiences. Clients were not compensated for testimonials.</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-spacing bg-primary text-white">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="zoom-in">
+                    <h2 class="display-5 fw-bold mb-4">Put the Kettle On and Give Us a Call</h2>
+                    <p class="lead mb-4">Even after you've done your research, you'll probably still have some questions. Why not give one of our friendly team a call and explore whether financial advice might be right for you?</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                        <a href="tel:02012345678" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-5">
+                            <i class="bi bi-calendar-check-fill"></i> Or Arrange a Callback
+                        </a>
+                    </div>
+                    <p class="small mb-0 opacity-75">We're open: Mon to Thurs 9am – 5pm and Fridays 9am – 4pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="text-white-50">Independent financial advisors helping individuals and businesses achieve their financial goals since 2002.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50 text-decoration-none">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50 text-decoration-none">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50 text-decoration-none">Pension Advice</a></li>
+                        <li class="mb-2"><a href="services.html#tax" class="text-white-50 text-decoration-none">Tax Planning</a></li>
+                        <li class="mb-2"><a href="services.html#estate" class="text-white-50 text-decoration-none">Estate Planning</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="about.html#team" class="text-white-50 text-decoration-none">Our Team</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50 text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            123 Financial Street, London EC2N 4AY
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:02012345678" class="text-white-50 text-decoration-none">020 1234 5678</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:info@sterlingfinancial.co.uk" class="text-white-50 text-decoration-none">info@sterlingfinancial.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FCA Compliance Statement -->
+            <div class="border-top border-secondary pt-4 mt-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 class="text-gold mb-3">Important Information & Regulatory Notice</h6>
+                        <p class="small text-white-50 mb-3">
+                            <strong>Sterling Financial Advisors Ltd</strong> is authorised and regulated by the Financial Conduct Authority (FCA).
+                            FCA Firm Reference Number: <strong>123456</strong>. You can verify our registration on the
+                            <a href="https://register.fca.org.uk/" class="text-gold" target="_blank" rel="noopener">FCA Register</a>.
+                        </p>
+                        <p class="small text-white-50 mb-3">
+                            Sterling Financial Advisors Ltd is registered in England and Wales. Company Registration Number: 12345678.
+                            Registered Office: 123 Financial Street, London EC2N 4AY.
+                        </p>
+                        <p class="small text-white-50 mb-3">
+                            <strong>Disclaimers:</strong> The value of investments and the income from them can go down as well as up,
+                            and you may get back less than you invested. Past performance is not a reliable indicator of future results.
+                            Tax treatment depends on individual circumstances and may be subject to change. The Financial Conduct Authority
+                            does not regulate tax advice or estate planning.
+                        </p>
+                        <p class="small text-white-50 mb-3">
+                            The content provided on this website is for informational and educational purposes only and should not be
+                            construed as financial advice. We recommend you seek independent financial advice before making any investment decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-top border-secondary pt-3 mt-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="small text-white-50 mb-2 mb-md-0">© 2025 Sterling Financial Advisors Ltd. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-center text-md-end mb-0">
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Privacy Policy</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Terms & Conditions</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="contact.html" class="btn btn-warning btn-lg rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; z-index: 1000;" data-bs-toggle="tooltip" title="Book Consultation">
+        <i class="bi bi-calendar-event-fill fs-4"></i>
+    </a>
+
+    <!-- Bootstrap 5.3.8 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+</html>

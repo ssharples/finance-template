@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the expert financial advisors at Sterling Financial. Chartered, qualified professionals dedicated to helping you achieve your financial goals.">
+    <title>Meet Our Team | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="page-header text-white py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-3">Meet Your Team</h1>
+                    <p class="lead">Qualified professionals who genuinely care about your financial future</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Intro -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">More Than Just Advisors</h2>
+                    <p class="lead text-muted mb-4">We're a team of chartered financial planners, paraplanners, and client service specialists – all working together to give you the best possible advice and support.</p>
+                    <p class="mb-0">Every member of our team is FCA regulated, fully qualified, and committed to ongoing professional development. But more importantly, we're real people who understand that behind every portfolio is a person with hopes, dreams, and concerns about the future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Senior Advisors -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">Senior Financial Advisors</h2>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Advisor 1 -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://placehold.co/400x500/1F2839/FFFFFF?text=Michael+Sterling+CFP" class="img-fluid h-100 object-fit-cover" alt="Michael Sterling">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h3 class="h4 fw-bold mb-2">Michael Sterling CFP®</h3>
+                                    <p class="text-primary mb-3"><strong>Senior Financial Planner & Founder</strong></p>
+
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-award-fill text-warning"></i> CFP® Chartered</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-patch-check-fill text-primary"></i> 25 Years Experience</span>
+                                    </div>
+
+                                    <p class="small mb-3">Michael founded Sterling Financial in 1998 with a simple mission: provide honest, jargon-free advice that puts clients first. A Chartered Financial Planner with over 25 years of experience, he specializes in retirement planning and pension transfers.</p>
+
+                                    <p class="small mb-3"><strong>Specialisms:</strong> Retirement Planning, Defined Benefit Pension Transfers, Tax-Efficient Withdrawals</p>
+
+                                    <p class="small text-muted mb-3"><em>"I started this firm because I was frustrated with how complicated the financial industry made everything. My job is to translate the complex into the simple – and help you make confident decisions about your future."</em></p>
+
+                                    <div class="d-flex gap-2">
+                                        <a href="mailto:michael@sterlingfa.co.uk" class="btn btn-sm btn-outline-primary"><i class="bi bi-envelope"></i> Email</a>
+                                        <a href="contact.html" class="btn btn-sm btn-warning">Book Meeting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advisor 2 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://placehold.co/400x500/B69D74/FFFFFF?text=Sarah+Johnson+DipPFS" class="img-fluid h-100 object-fit-cover" alt="Sarah Johnson">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h3 class="h4 fw-bold mb-2">Sarah Johnson DipPFS</h3>
+                                    <p class="text-primary mb-3"><strong>Senior Financial Planner</strong></p>
+
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-award-fill text-warning"></i> Diploma PFS</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-patch-check-fill text-primary"></i> 18 Years Experience</span>
+                                    </div>
+
+                                    <p class="small mb-3">Sarah joined Sterling Financial in 2010 and specializes in investment planning and intergenerational wealth transfer. With a particular passion for helping women plan for financial independence, she's known for her patient, empathetic approach.</p>
+
+                                    <p class="small mb-3"><strong>Specialisms:</strong> Investment Planning, ISAs & Tax Wrappers, Inheritance Tax Planning, Women's Financial Planning</p>
+
+                                    <p class="small text-muted mb-3"><em>"Money conversations can feel uncomfortable, especially if you're not sure where to start. I'm here to make it easier – no judgment, just practical advice and genuine support."</em></p>
+
+                                    <div class="d-flex gap-2">
+                                        <a href="mailto:sarah@sterlingfa.co.uk" class="btn btn-sm btn-outline-primary"><i class="bi bi-envelope"></i> Email</a>
+                                        <a href="contact.html" class="btn btn-sm btn-warning">Book Meeting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Advisor 3 -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://placehold.co/400x500/1F2839/FFFFFF?text=David+Chen+CFP" class="img-fluid h-100 object-fit-cover" alt="David Chen">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h3 class="h4 fw-bold mb-2">David Chen CFP®</h3>
+                                    <p class="text-primary mb-3"><strong>Senior Financial Planner</strong></p>
+
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-award-fill text-warning"></i> CFP® Chartered</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-patch-check-fill text-primary"></i> 15 Years Experience</span>
+                                    </div>
+
+                                    <p class="small mb-3">David specializes in working with business owners and corporate professionals, helping them navigate complex pension arrangements and maximize tax efficiency. He's also our go-to expert for international tax and cross-border wealth planning.</p>
+
+                                    <p class="small mb-3"><strong>Specialisms:</strong> Corporate Pensions, Business Owner Planning, International Tax, Executive Benefits</p>
+
+                                    <p class="small text-muted mb-3"><em>"Business owners often neglect their own financial planning because they're too busy building their company. I help you protect your wealth and plan for life after the business."</em></p>
+
+                                    <div class="d-flex gap-2">
+                                        <a href="mailto:david@sterlingfa.co.uk" class="btn btn-sm btn-outline-primary"><i class="bi bi-envelope"></i> Email</a>
+                                        <a href="contact.html" class="btn btn-sm btn-warning">Book Meeting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advisor 4 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="https://placehold.co/400x500/B69D74/FFFFFF?text=Emma+Williams+CertPFS" class="img-fluid h-100 object-fit-cover" alt="Emma Williams">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <h3 class="h4 fw-bold mb-2">Emma Williams CertPFS</h3>
+                                    <p class="text-primary mb-3"><strong>Financial Planner</strong></p>
+
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-award-fill text-warning"></i> Certificate PFS</span>
+                                        <span class="badge bg-light text-dark me-2 mb-2"><i class="bi bi-patch-check-fill text-primary"></i> 8 Years Experience</span>
+                                    </div>
+
+                                    <p class="small mb-3">Emma joined us in 2019 and brings fresh energy and enthusiasm to the team. Currently studying for her Chartered status, she specializes in working with younger professionals and first-time investors who are just starting their wealth-building journey.</p>
+
+                                    <p class="small mb-3"><strong>Specialisms:</strong> First-Time Investors, Pension Consolidation, Cash Flow Planning, Millennial Financial Planning</p>
+
+                                    <p class="small text-muted mb-3"><em>"You don't need to be wealthy to benefit from financial planning. Whether you're saving your first <span class="pound">&pound;</span>1,000 or your first million, I'll help you build a solid foundation for the future."</em></p>
+
+                                    <div class="d-flex gap-2">
+                                        <a href="mailto:emma@sterlingfa.co.uk" class="btn btn-sm btn-outline-primary"><i class="bi bi-envelope"></i> Email</a>
+                                        <a href="contact.html" class="btn btn-sm btn-warning">Book Meeting</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Team -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">Our Support Team</h2>
+                    <p class="lead text-muted">The talented professionals working behind the scenes</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Paraplanner -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="https://placehold.co/200x200/1F2839/FFFFFF?text=James+Roberts" class="rounded-circle mb-3" alt="James Roberts">
+                            <h4 class="h5 fw-bold mb-2">James Roberts DipPFS</h4>
+                            <p class="text-primary mb-3"><strong>Senior Paraplanner</strong></p>
+                            <p class="small mb-3">James is the technical wizard behind our recommendations. He creates detailed suitability reports and ensures every piece of advice is thoroughly researched and compliant.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-2">Technical Analysis</span>
+                                <span class="badge bg-light text-dark me-1 mb-2">Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Services Manager -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="https://placehold.co/200x200/B69D74/FFFFFF?text=Lucy+Anderson" class="rounded-circle mb-3" alt="Lucy Anderson">
+                            <h4 class="h5 fw-bold mb-2">Lucy Anderson</h4>
+                            <p class="text-primary mb-3"><strong>Client Services Manager</strong></p>
+                            <p class="small mb-3">Lucy is often the first voice you'll hear when you call. She coordinates meetings, manages client communications, and makes sure everything runs smoothly.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-2">Client Relations</span>
+                                <span class="badge bg-light text-dark me-1 mb-2">Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Administrator -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm text-center h-100">
+                        <div class="card-body p-4">
+                            <img src="https://placehold.co/200x200/1F2839/FFFFFF?text=Tom+Hughes" class="rounded-circle mb-3" alt="Tom Hughes">
+                            <h4 class="h5 fw-bold mb-2">Tom Hughes</h4>
+                            <p class="text-primary mb-3"><strong>Financial Administrator</strong></p>
+                            <p class="small mb-3">Tom handles the paperwork so you don't have to. From application processing to provider liaison, he ensures your financial affairs are managed efficiently.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-2">Administration</span>
+                                <span class="badge bg-light text-dark me-1 mb-2">Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Explained -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-4 text-center" data-aos="fade-up">What Do All These Qualifications Mean?</h2>
+                    <p class="lead text-center text-muted mb-5" data-aos="fade-up">We know the alphabet soup of financial qualifications can be confusing. Here's what they actually mean:</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="bi bi-award-fill text-warning fs-1 me-3"></i>
+                                        <div>
+                                            <h4 class="h5 fw-bold mb-2">CFP® (Certified Financial Planner)</h4>
+                                            <p class="small mb-0">The gold standard in financial planning. CFP® professionals have completed extensive training, passed rigorous exams, and committed to ongoing education and ethical standards. Only the top 15% of advisors hold this qualification.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="bi bi-patch-check-fill text-primary fs-1 me-3"></i>
+                                        <div>
+                                            <h4 class="h5 fw-bold mb-2">DipPFS (Diploma in Financial Planning)</h4>
+                                            <p class="small mb-0">The professional standard for financial advisors. This advanced qualification covers pensions, investments, taxation, and estate planning in depth. It's the stepping stone to becoming Chartered.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="bi bi-file-earmark-check-fill text-success fs-1 me-3"></i>
+                                        <div>
+                                            <h4 class="h5 fw-bold mb-2">CertPFS (Certificate in Financial Planning)</h4>
+                                            <p class="small mb-0">The foundation qualification for financial advisors. Anyone giving regulated financial advice must hold at least this level, which covers core financial planning principles and regulatory requirements.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-start mb-3">
+                                        <i class="bi bi-shield-check text-info fs-1 me-3"></i>
+                                        <div>
+                                            <h4 class="h5 fw-bold mb-2">FCA Regulation</h4>
+                                            <p class="small mb-0">All our advisors are registered with the Financial Conduct Authority – the UK's financial regulator. This means we meet strict professional standards, and your money is protected by the Financial Services Compensation Scheme.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Team CTA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">Ready to Meet Your Advisor?</h2>
+                    <p class="lead mb-4">We'll match you with the advisor who's best suited to your needs. No obligation, no pressure – just a friendly conversation about your financial future.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:02012345678" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg px-5">
+                            <i class="bi bi-calendar-check-fill"></i> Book a Meeting
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="mb-3">Independent financial advice that puts you first. FCA regulated and committed to helping you achieve your financial goals.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="team.html" class="text-white-50">Our Team</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50">Pension Advice</a></li>
+                        <li class="mb-2"><a href="services.html#tax" class="text-white-50">Tax Planning</a></li>
+                        <li class="mb-2"><a href="services.html#estate" class="text-white-50">Estate Planning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> 020 1234 5678</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> hello@sterlingfa.co.uk</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 123 Financial District<br><span class="ms-4">London, EC1A 1BB</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-lg-8 small text-white-50">
+                    <p class="mb-2"><strong>Important Information:</strong> Sterling Financial Advisors is authorised and regulated by the Financial Conduct Authority (FCA Reference: 123456). The value of investments can go down as well as up and you may get back less than you invested. Past performance is not a reliable indicator of future results.</p>
+                    <p class="mb-0">&copy; 2024 Sterling Financial Advisors. All rights reserved. | <a href="#" class="text-white-50">Privacy Policy</a> | <a href="#" class="text-white-50">Terms & Conditions</a> | <a href="#" class="text-white-50">Complaints Procedure</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

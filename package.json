@@ -1,0 +1,27 @@
+{
+  "name": "sterling-financial-advisors",
+  "version": "1.0.0",
+  "description": "Sterling Financial Advisors - Professional Financial Planning Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "finance",
+    "financial-advisors",
+    "vite",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vheemstra/vite-plugin-imagemin": "^2.2.1",
+    "sharp": "^0.34.4",
+    "vite": "^7.1.12",
+    "vite-plugin-image-optimizer": "^2.0.2",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-webp-generator": "^0.1.0"
+  }
+}

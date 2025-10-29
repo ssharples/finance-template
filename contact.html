@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sterling Financial Advisors. Book a free consultation with our expert financial advisors. Call 020 1234 5678 or fill out our contact form.">
+    <title>Contact Us | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-3">Let's Have a Chat</h1>
+                    <p class="lead">Give us a call or arrange a callback at a time that suits you. We're here to help – no jargon, just clear advice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-telephone-fill text-primary fs-3"></i>
+                            </div>
+                            <h5 class="card-title">Call Us</h5>
+                            <p class="text-muted small mb-3">Mon-Fri: 9am-5pm</p>
+                            <a href="tel:02012345678" class="btn btn-outline-primary btn-sm">020 1234 5678</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-envelope-fill text-success fs-3"></i>
+                            </div>
+                            <h5 class="card-title">Email Us</h5>
+                            <p class="text-muted small mb-3">We reply within 24 hours</p>
+                            <a href="mailto:info@sterlingfinancial.co.uk" class="btn btn-outline-success btn-sm">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-geo-alt-fill text-warning fs-3"></i>
+                            </div>
+                            <h5 class="card-title">Visit Us</h5>
+                            <p class="text-muted small mb-3">By appointment only</p>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#mapModal">View Map</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 shadow-sm h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="bg-info bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                                <i class="bi bi-chat-dots-fill text-info fs-3"></i>
+                            </div>
+                            <h5 class="card-title">Live Chat</h5>
+                            <p class="text-muted small mb-3">Chat with our team</p>
+                            <button class="btn btn-outline-info btn-sm" onclick="alert('Live chat feature coming soon!')">Start Chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-white" id="consultation-form">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Arrange a Callback</h2>
+                        <p class="lead text-muted">Pop your details below and one of our friendly team will be in touch. Gives you a chance to put the kettle on ☕</p>
+                    </div>
+
+                    <div class="card border-0 shadow-lg" data-aos="fade-up">
+                        <div class="card-body p-4 p-md-5">
+                            <!-- Multi-step Form Indicator -->
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-primary">Step 1</span>
+                                    <span class="badge bg-secondary">Step 2</span>
+                                    <span class="badge bg-secondary">Step 3</span>
+                                </div>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 33.33%"></div>
+                                </div>
+                            </div>
+
+                            <form id="consultationForm" novalidate>
+                                <!-- Step 1: Personal Information -->
+                                <div class="form-step active" data-step="1">
+                                    <h4 class="mb-4">Personal Information</h4>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form-control-lg" id="firstName" required>
+                                            <div class="invalid-feedback">Please enter your first name.</div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form-control-lg" id="lastName" required>
+                                            <div class="invalid-feedback">Please enter your last name.</div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control form-control-lg" id="email" required>
+                                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                            <input type="tel" class="form-control form-control-lg" id="phone" required>
+                                            <div class="invalid-feedback">Please enter your phone number.</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="postcode" class="form-label">Postcode</label>
+                                            <input type="text" class="form-control form-control-lg" id="postcode" placeholder="e.g., SW1A 1AA">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(2)">
+                                            Next Step <i class="bi bi-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 2: Service Interest -->
+                                <div class="form-step" data-step="2" style="display: none;">
+                                    <h4 class="mb-4">What Services Are You Interested In?</h4>
+
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="retirementService">
+                                                <label class="form-check-label" for="retirementService">
+                                                    <strong>Retirement Planning</strong>
+                                                    <small class="d-block text-muted">Plan for your retirement</small>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="investmentService">
+                                                <label class="form-check-label" for="investmentService">
+                                                    <strong>Investment Management</strong>
+                                                    <small class="d-block text-muted">Grow your wealth</small>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="pensionService">
+                                                <label class="form-check-label" for="pensionService">
+                                                    <strong>Pension Advice</strong>
+                                                    <small class="d-block text-muted">Optimize your pensions</small>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="taxService">
+                                                <label class="form-check-label" for="taxService">
+                                                    <strong>Tax Planning</strong>
+                                                    <small class="d-block text-muted">Minimize tax liability</small>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="estateService">
+                                                <label class="form-check-label" for="estateService">
+                                                    <strong>Estate Planning</strong>
+                                                    <small class="d-block text-muted">Protect your legacy</small>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="protectionService">
+                                                <label class="form-check-label" for="protectionService">
+                                                    <strong>Protection Planning</strong>
+                                                    <small class="d-block text-muted">Safeguard your family</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <label for="assets" class="form-label">Approximate Assets Under Consideration</label>
+                                        <select class="form-select form-select-lg" id="assets">
+                                            <option selected>Select range...</option>
+                                            <option value="under50k">Under <span class="pound">&pound;</span>50,000</option>
+                                            <option value="50k-100k">&pound;50,000 - <span class="pound">&pound;</span>100,000</option>
+                                            <option value="100k-250k">&pound;100,000 - <span class="pound">&pound;</span>250,000</option>
+                                            <option value="250k-500k">&pound;250,000 - <span class="pound">&pound;</span>500,000</option>
+                                            <option value="500k-1m">&pound;500,000 - <span class="pound">&pound;</span>1,000,000</option>
+                                            <option value="over1m">Over <span class="pound">&pound;</span>1,000,000</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg" onclick="prevStep(1)">
+                                            <i class="bi bi-arrow-left"></i> Previous
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-lg" onclick="nextStep(3)">
+                                            Next Step <i class="bi bi-arrow-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3: Additional Details -->
+                                <div class="form-step" data-step="3" style="display: none;">
+                                    <h4 class="mb-4">Tell Us More</h4>
+
+                                    <div class="mb-4">
+                                        <label for="message" class="form-label">How can we help you?</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Please provide details about your financial situation and goals..."></textarea>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="preferredContact" class="form-label">Preferred Contact Method</label>
+                                        <select class="form-select form-select-lg" id="preferredContact">
+                                            <option value="phone">Phone Call</option>
+                                            <option value="email">Email</option>
+                                            <option value="either" selected>Either</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="preferredTime" class="form-label">Preferred Contact Time</label>
+                                        <select class="form-select form-select-lg" id="preferredTime">
+                                            <option value="morning">Morning (9am-12pm)</option>
+                                            <option value="afternoon" selected>Afternoon (12pm-5pm)</option>
+                                            <option value="anytime">Anytime</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="alert alert-info mb-4">
+                                        <div class="d-flex">
+                                            <i class="bi bi-shield-check fs-4 me-3"></i>
+                                            <div>
+                                                <strong>Your Privacy is Protected</strong>
+                                                <p class="small mb-0">All information is encrypted and handled in accordance with our <a href="#" class="alert-link">Privacy Policy</a>. We will never share your details with third parties.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="consent" required>
+                                        <label class="form-check-label" for="consent">
+                                            I consent to Sterling Financial Advisors contacting me about my enquiry <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg" onclick="prevStep(2)">
+                                            <i class="bi bi-arrow-left"></i> Previous
+                                        </button>
+                                        <button type="submit" class="btn btn-success btn-lg px-5">
+                                            <i class="bi bi-calendar-check-fill"></i> Book My Free Consultation
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Security Badges -->
+                    <div class="text-center mt-4" data-aos="fade-up">
+                        <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                            <img src="https://placehold.co/100x50/E0E0E0/666666?text=SSL+Secure" alt="SSL Secure" class="opacity-75">
+                            <img src="https://placehold.co/100x50/E0E0E0/666666?text=GDPR" alt="GDPR Compliant" class="opacity-75">
+                            <img src="https://placehold.co/100x50/E0E0E0/666666?text=FCA+Regulated" alt="FCA Regulated" class="opacity-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row g-4">
+                        <div class="col-lg-6" data-aos="fade-right">
+                            <h3 class="h2 mb-4">Our Office Location</h3>
+                            <div class="mb-4">
+                                <h5><i class="bi bi-geo-alt-fill text-primary me-2"></i> Address</h5>
+                                <p class="text-muted">
+                                    Sterling Financial Advisors Ltd<br>
+                                    123 Financial Street<br>
+                                    London EC2N 4AY<br>
+                                    United Kingdom
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5><i class="bi bi-clock-fill text-primary me-2"></i> Office Hours</h5>
+                                <ul class="list-unstyled text-muted">
+                                    <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
+                                    <li><strong>Saturday:</strong> By appointment only</li>
+                                    <li><strong>Sunday:</strong> Closed</li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5><i class="bi bi-info-circle-fill text-primary me-2"></i> Getting Here</h5>
+                                <p class="text-muted">
+                                    <strong>Tube:</strong> Bank Station (Central, Northern, Waterloo & City lines) - 5 min walk<br>
+                                    <strong>Bus:</strong> Routes 8, 25, 242, 521<br>
+                                    <strong>Parking:</strong> Limited street parking, public car park nearby
+                                </p>
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                <strong>Please Note:</strong> Office visits are by appointment only. Please book ahead to ensure an advisor is available.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-left">
+                            <div class="ratio ratio-4x3 rounded shadow">
+                                <img src="https://placehold.co/600x450/F5F5EF/1F2839?text=Google+Maps+Location" alt="Office Location Map" class="rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+                        <p class="lead text-muted">Common questions about booking a consultation</p>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Is the initial consultation really free?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, absolutely! Your first consultation is completely free with no obligation. We'll discuss your financial situation, goals, and how we can help.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How long does a consultation take?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Initial consultations typically last 45-60 minutes. This gives us enough time to understand your needs and explain how we can help.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I have a video consultation instead of in-person?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer video consultations via Zoom or Microsoft Teams. Just let us know your preference when booking.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What should I bring to the consultation?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Don't worry about bringing specific documents to the first meeting. We'll discuss what information we need during the consultation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    How do you charge for your services?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer transparent, fee-based advice. Our fees are discussed upfront during your consultation, with no hidden charges or commissions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Office Location</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <img src="https://placehold.co/800x600/F5F5EF/1F2839?text=Interactive+Map" alt="Interactive Map">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-muted small mb-0">123 Financial Street, London EC2N 4AY</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="text-white-50">Independent financial advisors helping individuals and businesses achieve their financial goals since 2002.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50 text-decoration-none">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50 text-decoration-none">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50 text-decoration-none">Pension Advice</a></li>
+                        <li class="mb-2"><a href="services.html#tax" class="text-white-50 text-decoration-none">Tax Planning</a></li>
+                        <li class="mb-2"><a href="services.html#estate" class="text-white-50 text-decoration-none">Estate Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="about.html#team" class="text-white-50 text-decoration-none">Our Team</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50 text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            123 Financial Street, London EC2N 4AY
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:02012345678" class="text-white-50 text-decoration-none">020 1234 5678</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:info@sterlingfinancial.co.uk" class="text-white-50 text-decoration-none">info@sterlingfinancial.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 mt-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 class="text-gold mb-3">Important Information & Regulatory Notice</h6>
+                        <p class="small text-white-50 mb-3">
+                            <strong>Sterling Financial Advisors Ltd</strong> is authorised and regulated by the Financial Conduct Authority (FCA).
+                            FCA Firm Reference Number: <strong>123456</strong>. You can verify our registration on the
+                            <a href="https://register.fca.org.uk/" class="text-gold" target="_blank" rel="noopener">FCA Register</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-3 mt-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="small text-white-50 mb-2 mb-md-0">© 2025 Sterling Financial Advisors Ltd. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-center text-md-end mb-0">
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Privacy Policy</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Terms & Conditions</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.8 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Multi-step form functionality
+        let currentStep = 1;
+
+        function nextStep(step) {
+            // Validate current step
+            const currentForm = document.querySelector(`.form-step[data-step="${currentStep}"]`);
+            const inputs = currentForm.querySelectorAll('input[required]');
+            let valid = true;
+
+            inputs.forEach(input => {
+                if (!input.checkValidity()) {
+                    input.classList.add('is-invalid');
+                    valid = false;
+                } else {
+                    input.classList.remove('is-invalid');
+                    input.classList.add('is-valid');
+                }
+            });
+
+            if (!valid) return;
+
+            // Hide current step
+            document.querySelector(`.form-step[data-step="${currentStep}"]`).style.display = 'none';
+
+            // Show next step
+            document.querySelector(`.form-step[data-step="${step}"]`).style.display = 'block';
+            currentStep = step;
+
+            // Update progress bar and badges
+            updateProgress();
+
+            // Scroll to top of form
+            document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function prevStep(step) {
+            // Hide current step
+            document.querySelector(`.form-step[data-step="${currentStep}"]`).style.display = 'none';
+
+            // Show previous step
+            document.querySelector(`.form-step[data-step="${step}"]`).style.display = 'block';
+            currentStep = step;
+
+            // Update progress bar and badges
+            updateProgress();
+
+            // Scroll to top of form
+            document.getElementById('consultation-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function updateProgress() {
+            const progress = (currentStep / 3) * 100;
+            document.querySelector('.progress-bar').style.width = progress + '%';
+
+            // Update badges
+            document.querySelectorAll('.badge').forEach((badge, index) => {
+                if (index + 1 <= currentStep) {
+                    badge.classList.remove('bg-secondary');
+                    badge.classList.add('bg-primary');
+                } else {
+                    badge.classList.remove('bg-primary');
+                    badge.classList.add('bg-secondary');
+                }
+            });
+        }
+
+        // Form submission
+        document.getElementById('consultationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            if (!this.checkValidity()) {
+                e.stopPropagation();
+                this.classList.add('was-validated');
+                return;
+            }
+
+            // Show success message (in real implementation, this would submit to server)
+            alert('Thank you for booking a consultation! We will contact you within 24 hours.');
+            this.reset();
+            this.classList.remove('was-validated');
+
+            // Reset to first step
+            document.querySelectorAll('.form-step').forEach(step => step.style.display = 'none');
+            document.querySelector('.form-step[data-step="1"]').style.display = 'block';
+            currentStep = 1;
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

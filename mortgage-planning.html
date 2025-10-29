@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert mortgage advice and property planning. First-time buyers, remortgaging, buy-to-let, and equity release guidance from independent advisors.">
+    <title>Mortgage & Property Planning | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-7 text-white" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4">
+                        Find the Right Mortgage for Your Next Move
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        Whether you're buying your first home, moving up the ladder, or investing in property, we'll search thousands of mortgage deals to find you the right one – at the right price.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="contact.html" class="btn btn-warning btn-lg px-4 fw-semibold">
+                            <i class="bi bi-calculator-fill"></i> Get a Mortgage Quote
+                        </a>
+                        <a href="tel:02012345678" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                    <img src="https://placehold.co/600x500/FFFFFF/1F2839?text=Property+Planning" alt="Mortgage Planning" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="h3 mb-4">Questions to ask yourself...</h2>
+                    <p class="text-muted mb-4">Property is probably the biggest financial decision you'll ever make. These questions will help you get it right.</p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">How much can I actually borrow?</h6>
+                            <p class="small text-muted mb-0">Most lenders will lend 4-5x your income, but your affordability depends on more than just salary.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Fixed or variable rate?</h6>
+                            <p class="small text-muted mb-0">Interest rates change constantly. We'll help you choose the right deal for your circumstances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Should I remortgage now?</h6>
+                            <p class="small text-muted mb-0">Coming to the end of your fixed rate? Don't slip onto your lender's expensive standard variable rate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Is buy-to-let still worth it?</h6>
+                            <p class="small text-muted mb-0">Tax changes have made buy-to-let trickier, but it can still work if you structure it properly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">Can I use pension or savings for a deposit?</h6>
+                            <p class="small text-muted mb-0">There are ways to access pension funds or use gifts tax-efficiently to help with your deposit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card border-0 bg-white h-100 shadow-sm hover-lift">
+                        <div class="card-body p-3">
+                            <h6 class="card-title text-primary mb-2">What about equity release?</h6>
+                            <p class="small text-muted mb-0">Need to unlock cash from your home in retirement? Equity release might help, but it's not for everyone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">More Than Just Mortgages</h2>
+                    <p class="lead mb-4" data-aos="fade-up">A mortgage broker finds you a mortgage. We do that – but we also help you think about the bigger picture.</p>
+
+                    <p class="mb-4" data-aos="fade-up">Should you overpay your mortgage or save into a pension? Is it better to have an offset mortgage or a regular one? What happens to your mortgage if you die or can't work? These are the questions we help you answer.</p>
+
+                    <p class="mb-4" data-aos="fade-up">Because we're whole-of-market advisors, we can search thousands of mortgage products from over 90 lenders. That includes deals you won't find on comparison websites or by going direct to your bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">How We Can Help</h2>
+
+                    <div class="row g-4">
+                        <!-- First Time Buyers -->
+                        <div class="col-md-6" data-aos="fade-up">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-house-door-fill text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">First-Time Buyers</h3>
+                                    </div>
+                                    <p class="mb-3">Getting on the property ladder can feel overwhelming. We'll guide you through every step.</p>
+                                    <ul class="small">
+                                        <li>Calculate how much you can borrow</li>
+                                        <li>Find the best first-time buyer deals and government schemes</li>
+                                        <li>Help with Lifetime ISA withdrawals</li>
+                                        <li>Arrange buildings insurance and life cover</li>
+                                        <li>Recommend solicitors and surveyors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Remortgaging -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-arrow-repeat text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Remortgaging</h3>
+                                    </div>
+                                    <p class="mb-3">Your fixed rate ending? Don't just accept your lender's offer – we'll find you a better deal.</p>
+                                    <ul class="small">
+                                        <li>Compare thousands of remortgage products</li>
+                                        <li>Calculate potential savings from switching</li>
+                                        <li>Handle all the paperwork and applications</li>
+                                        <li>Release equity if needed for home improvements</li>
+                                        <li>Free remortgage service in most cases</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Moving Home -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-truck text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Moving Home (Purchase)</h3>
+                                    </div>
+                                    <p class="mb-3">Whether you're upsizing, downsizing, or relocating, we'll make the mortgage process smooth.</p>
+                                    <ul class="small">
+                                        <li>Port your existing mortgage or find a new one</li>
+                                        <li>Calculate affordability for your new property</li>
+                                        <li>Coordinate with your solicitor and estate agent</li>
+                                        <li>Arrange mortgage protection insurance</li>
+                                        <li>Decision in principle within 24 hours</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buy-to-Let -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-building text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Buy-to-Let Mortgages</h3>
+                                    </div>
+                                    <p class="mb-3">Property investment can be lucrative, but you need the right mortgage and structure.</p>
+                                    <ul class="small">
+                                        <li>Access specialist buy-to-let lenders</li>
+                                        <li>Calculate rental yield and affordability</li>
+                                        <li>Limited company vs personal ownership advice</li>
+                                        <li>Portfolio landlord solutions</li>
+                                        <li>HMO and multi-unit block mortgages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Equity Release -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-piggy-bank text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Equity Release & Later Life</h3>
+                                    </div>
+                                    <p class="mb-3">Need to unlock cash from your home? We'll help you understand all your options.</p>
+                                    <ul class="small">
+                                        <li>Lifetime mortgages with no negative equity guarantee</li>
+                                        <li>Retirement interest-only mortgages</li>
+                                        <li>Downsizing alternatives to equity release</li>
+                                        <li>Impact on benefits and inheritance</li>
+                                        <li>Independent, impartial advice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Self-Employed -->
+                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-briefcase text-primary fs-1 me-3"></i>
+                                        <h3 class="h5 fw-bold mb-0">Self-Employed Mortgages</h3>
+                                    </div>
+                                    <p class="mb-3">Being self-employed makes getting a mortgage trickier – but not impossible.</p>
+                                    <ul class="small">
+                                        <li>Access lenders who understand self-employed income</li>
+                                        <li>1 or 2 years' accounts accepted</li>
+                                        <li>Contractor and freelancer specialists</li>
+                                        <li>Director mortgages (salary + dividends)</li>
+                                        <li>Help preparing your accounts for application</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Process -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="display-6 fw-bold mb-5 text-center" data-aos="fade-up">Our Mortgage Process</h2>
+
+                    <div class="row g-4">
+                        <div class="col-md-3" data-aos="fade-up">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">1</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Initial Chat</h4>
+                                <p class="text-muted small mb-0">We'll discuss your situation, goals, and what you're looking for. No obligation, just a friendly conversation.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">2</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Research</h4>
+                                <p class="text-muted small mb-0">We'll search the whole market to find the best mortgage deals for your circumstances and requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">3</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Application</h4>
+                                <p class="text-muted small mb-0">We'll handle the entire application process, liaising with lenders and keeping you updated throughout.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="text-center">
+                                <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                    <span class="display-6 fw-bold">4</span>
+                                </div>
+                                <h4 class="h5 fw-bold mb-3">Completion</h4>
+                                <p class="text-muted small mb-0">Once approved, we'll coordinate with your solicitor to make sure everything goes smoothly on completion day.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5" data-aos="fade-up">
+                        <p class="lead mb-0">Most applications are approved within 2-4 weeks. We'll keep you informed every step of the way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-6 fw-bold mb-4 text-center" data-aos="fade-up">How Much Can You Borrow?</h2>
+                    <p class="text-center text-muted mb-5" data-aos="fade-up">Use our quick calculator to get an estimate. For a precise figure, give us a call.</p>
+
+                    <div class="card border-0 shadow-sm" data-aos="fade-up">
+                        <div class="card-body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Your annual income</label>
+                                    <input type="number" class="form-control" id="income1" placeholder="£40,000">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Partner's annual income (if applicable)</label>
+                                    <input type="number" class="form-control" id="income2" placeholder="£0">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Monthly commitments (loans, credit cards, etc.)</label>
+                                    <input type="number" class="form-control" id="commitments" placeholder="£500">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Deposit available</label>
+                                    <input type="number" class="form-control" id="deposit" placeholder="£20,000">
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary btn-lg w-100" onclick="calculateMortgage()">
+                                        <i class="bi bi-calculator"></i> Calculate Borrowing Amount
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="alert alert-success d-none" id="mortgageResult">
+                                        <h5 class="alert-heading">Estimated Borrowing Capacity:</h5>
+                                        <p class="display-6 fw-bold mb-2" id="borrowAmount">&pound;0</p>
+                                        <p class="mb-2"><strong>Maximum property price:</strong> <span id="propertyPrice">&pound;0</span></p>
+                                        <p class="small mb-0">This is a rough estimate based on 4.5x income. Actual borrowing depends on full affordability assessment. Book a free consultation for accurate figures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Find Your Perfect Mortgage?</h2>
+                    <p class="lead mb-4">Pop the kettle on and let's have a chat about your property plans. No fees until you have an offer accepted.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="tel:02012345678" class="btn btn-warning btn-lg px-5">
+                            <i class="bi bi-telephone-fill"></i> Call 020 1234 5678
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg px-5">
+                            <i class="bi bi-envelope-fill"></i> Request a Callback
+                        </a>
+                    </div>
+                    <p class="small text-muted mt-4 mb-0">Free initial consultation. Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="mb-3">Independent financial advice that puts you first. FCA regulated and committed to helping you achieve your financial goals.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-4"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="team.html" class="text-white-50">Our Team</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50">Resources</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50">FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50">Pension Advice</a></li>
+                        <li class="mb-2"><a href="estate-planning.html" class="text-white-50">Estate Planning</a></li>
+                        <li class="mb-2"><a href="protection.html" class="text-white-50">Protection & Insurance</a></li>
+                        <li class="mb-2"><a href="mortgage-planning.html" class="text-white-50">Mortgage & Property</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> 020 1234 5678</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> hello@sterlingfa.co.uk</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> 123 Financial District<br><span class="ms-4">London, EC1A 1BB</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-lg-8 small text-white-50">
+                    <p class="mb-2"><strong>Important Information:</strong> Sterling Financial Advisors is authorised and regulated by the Financial Conduct Authority (FCA Reference: 123456). Your home may be repossessed if you do not keep up repayments on your mortgage. The FCA does not regulate some forms of buy-to-let mortgages.</p>
+                    <p class="mb-0">&copy; 2024 Sterling Financial Advisors. All rights reserved. | <a href="#" class="text-white-50">Privacy Policy</a> | <a href="#" class="text-white-50">Terms & Conditions</a> | <a href="#" class="text-white-50">Complaints Procedure</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Mortgage calculator
+        function calculateMortgage() {
+            const income1 = parseFloat(document.getElementById('income1').value) || 0;
+            const income2 = parseFloat(document.getElementById('income2').value) || 0;
+            const totalIncome = income1 + income2;
+            const deposit = parseFloat(document.getElementById('deposit').value) || 0;
+
+            // Simple 4.5x income calculation
+            const borrowAmount = totalIncome * 4.5;
+            const propertyPrice = borrowAmount + deposit;
+
+            document.getElementById('borrowAmount').textContent = '<span class="pound">&pound;</span>' + borrowAmount.toLocaleString();
+            document.getElementById('propertyPrice').textContent = '<span class="pound">&pound;</span>' + propertyPrice.toLocaleString();
+            document.getElementById('mortgageResult').classList.remove('d-none');
+        }
+    </script>
+</body>
+</html>

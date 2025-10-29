@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Financial resources, guides, and calculators from Sterling Financial Advisors. Expert insights on retirement, investment, pensions, and tax planning.">
+    <title>Resources & Insights | Sterling Financial Advisors</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header Bar -->
+    <div class="top-header bg-white py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="50">
+                    </a>
+                </div>
+                <div class="col-6 col-md-8 text-end">
+                    <div class="d-inline-flex align-items-center gap-3 gap-md-4">
+                        <a href="tel:02012345678" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">020 1234 5678</span>
+                        </a>
+                        <a href="mailto:info@sterlingfinancial.co.uk" class="text-decoration-none text-primary d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope-fill fs-5"></i>
+                            <span class="fw-semibold d-none d-md-inline">info@sterlingfinancial.co.uk</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="index.html">
+                <img src="assets/images/SF-logo.svg" alt="Sterling Financial Advisors" height="40" class="logo-white">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvas">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-items-lg-center w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <div class="dropdown-menu mega-menu p-4">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Personal Finance</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="services.html#retirement">Retirement Planning</a></li>
+                                                <li><a class="dropdown-item" href="services.html#investment">Investment Management</a></li>
+                                                <li><a class="dropdown-item" href="services.html#pension">Pension Advice</a></li>
+                                                <li><a class="dropdown-item" href="services.html#tax">Tax Planning</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Protection & Estate</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="estate-planning.html">Estate Planning & Wills</a></li>
+                                                <li><a class="dropdown-item" href="protection.html">Protection & Life Insurance</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h6 class="text-primary fw-bold mb-3">Property & Business</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="mortgage-planning.html">Mortgage & Property</a></li>
+                                                <li><a class="dropdown-item" href="business-planning.html">Corporate & Business</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="p-3 bg-light rounded">
+                                                <h6 class="text-primary fw-bold mb-2">Need Help?</h6>
+                                                <p class="small text-muted mb-3">Not sure which service you need? Talk to our advisors.</p>
+                                                <a href="contact.html" class="btn btn-primary btn-sm w-100">Get in Touch</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-3">News, Tips & Advice</h1>
+                    <p class="lead">Free guides, calculators, and expert insights to help you understand your options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="h3 mb-4">Featured Guides</h2>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/1F2839/FFFFFF?text=Retirement+Guide" class="card-img-top" alt="Retirement Planning Guide">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Guide</div>
+                            <h5 class="card-title">Ultimate Retirement Planning Guide 2025</h5>
+                            <p class="card-text text-muted small">Comprehensive guide covering everything you need to know about planning for a comfortable retirement in the UK.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 15 min read</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/009FD7/FFFFFF?text=Tax+Allowances" class="card-img-top" alt="Tax Planning">
+                        <div class="card-body">
+                            <div class="badge bg-success mb-2">Article</div>
+                            <h5 class="card-title">Tax Allowances & Planning for 2024/25</h5>
+                            <p class="card-text text-muted small">Make the most of your tax allowances with our comprehensive guide to ISAs, pensions, and capital gains.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 10 min read</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/B69D74/1F2839?text=Investment+Strategy" class="card-img-top" alt="Investment Strategy">
+                        <div class="card-body">
+                            <div class="badge bg-warning text-dark mb-2">Guide</div>
+                            <h5 class="card-title">Investment Strategy in Uncertain Times</h5>
+                            <p class="card-text text-muted small">How to build a resilient investment portfolio that can weather market volatility and economic uncertainty.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <small class="text-muted"><i class="bi bi-clock"></i> 12 min read</small>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Calculators -->
+    <section class="py-5 bg-light" id="calculators">
+        <div class="container py-4">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-3">Financial Calculators</h2>
+                    <p class="lead text-muted">Use our free tools to estimate your financial needs and goals</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Retirement Calculator -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-lg h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-piggy-bank-fill fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="card-title mb-1">Retirement Calculator</h4>
+                                    <p class="text-muted small mb-0">Calculate how much you need to save</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="currentAge" class="form-label">Current Age</label>
+                                <input type="number" class="form-control" id="currentAge" value="35" min="18" max="100">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="retirementAge" class="form-label">Retirement Age</label>
+                                <input type="number" class="form-control" id="retirementAge" value="65" min="50" max="75">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="currentSavings" class="form-label">Current Pension Savings (<span class="pound">&pound;</span>)</label>
+                                <input type="number" class="form-control" id="currentSavings" value="50000" min="0">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="monthlyContribution" class="form-label">Monthly Contribution (<span class="pound">&pound;</span>)</label>
+                                <input type="number" class="form-control" id="monthlyContribution" value="500" min="0">
+                            </div>
+
+                            <button class="btn btn-primary w-100 mb-3" onclick="calculateRetirement()">
+                                <i class="bi bi-calculator"></i> Calculate
+                            </button>
+
+                            <div id="retirementResult" class="alert alert-info" style="display: none;">
+                                <h5 class="alert-heading">Estimated Retirement Fund</h5>
+                                <p class="mb-0 display-6 fw-bold text-primary" id="resultAmount">&pound;0</p>
+                                <small class="text-muted">Based on 5% annual growth</small>
+                            </div>
+
+                            <div class="alert alert-warning small">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                This is an estimate only. Speak to an advisor for personalized advice.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mortgage Calculator -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-lg h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                                    <i class="bi bi-house-fill fs-3"></i>
+                                </div>
+                                <div>
+                                    <h4 class="card-title mb-1">Mortgage Calculator</h4>
+                                    <p class="text-muted small mb-0">Estimate your monthly payments</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="propertyPrice" class="form-label">Property Price (<span class="pound">&pound;</span>)</label>
+                                <input type="number" class="form-control" id="propertyPrice" value="300000" min="0" step="1000">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="deposit" class="form-label">Deposit: <span id="depositPercent">20%</span></label>
+                                <input type="range" class="form-range" id="deposit" min="5" max="50" value="20" oninput="updateDeposit(this.value)">
+                                <small class="text-muted">&pound;<span id="depositAmount">60,000</span></small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="interestRate" class="form-label">Interest Rate (%)</label>
+                                <input type="number" class="form-control" id="interestRate" value="4.5" min="0" max="15" step="0.1">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mortgageTerm" class="form-label">Mortgage Term (years)</label>
+                                <select class="form-select" id="mortgageTerm">
+                                    <option value="15">15 years</option>
+                                    <option value="20">20 years</option>
+                                    <option value="25" selected>25 years</option>
+                                    <option value="30">30 years</option>
+                                    <option value="35">35 years</option>
+                                </select>
+                            </div>
+
+                            <button class="btn btn-success w-100 mb-3" onclick="calculateMortgage()">
+                                <i class="bi bi-calculator"></i> Calculate
+                            </button>
+
+                            <div id="mortgageResult" class="alert alert-success" style="display: none;">
+                                <h5 class="alert-heading">Estimated Monthly Payment</h5>
+                                <p class="mb-0 display-6 fw-bold text-success" id="monthlyPayment">&pound;0</p>
+                                <small class="text-muted">Total repayable: <span class="pound">&pound;</span><span id="totalRepayable">0</span></small>
+                            </div>
+
+                            <div class="alert alert-warning small">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                This is an estimate. Actual rates may vary.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-3">Latest Insights</h2>
+                    <p class="text-muted">Expert commentary on markets, planning, and financial strategies</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/66B3A1/FFFFFF?text=Market+Update" class="card-img-top" alt="Market Update">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-info me-2">Market Update</span>
+                                <small class="text-muted">15 Oct 2025</small>
+                            </div>
+                            <h5 class="card-title">Q4 2025 Market Outlook</h5>
+                            <p class="card-text text-muted small">Our analysis of market trends and what they mean for your investments as we head into the final quarter.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/6C757D/FFFFFF?text=Pension+Changes" class="card-img-top" alt="Pension Changes">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-warning text-dark me-2">Pensions</span>
+                                <small class="text-muted">12 Oct 2025</small>
+                            </div>
+                            <h5 class="card-title">New Pension Rules Explained</h5>
+                            <p class="card-text text-muted small">Understanding the latest pension regulation changes and how they might affect your retirement planning.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/28A745/FFFFFF?text=ISA+Strategy" class="card-img-top" alt="ISA Strategy">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-success me-2">Tax Planning</span>
+                                <small class="text-muted">08 Oct 2025</small>
+                            </div>
+                            <h5 class="card-title">Maximizing Your ISA Allowance</h5>
+                            <p class="card-text text-muted small">Strategic approaches to make the most of your <span class="pound">&pound;</span>20,000 ISA allowance for the 2024/25 tax year.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/DC3545/FFFFFF?text=Estate+Planning" class="card-img-top" alt="Estate Planning">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-danger me-2">Estate Planning</span>
+                                <small class="text-muted">05 Oct 2025</small>
+                            </div>
+                            <h5 class="card-title">Inheritance Tax Planning Strategies</h5>
+                            <p class="card-text text-muted small">Effective strategies to reduce inheritance tax and protect your wealth for future generations.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/0DCAF0/000000?text=Diversification" class="card-img-top" alt="Portfolio Diversification">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-primary me-2">Investing</span>
+                                <small class="text-muted">01 Oct 2025</small>
+                            </div>
+                            <h5 class="card-title">The Power of Diversification</h5>
+                            <p class="card-text text-muted small">Why spreading risk across different assets is crucial for long-term investment success.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <article class="card border-0 shadow-sm h-100">
+                        <img src="https://placehold.co/400x250/FFC107/000000?text=Financial+Goals" class="card-img-top" alt="Financial Goals">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge bg-secondary me-2">Planning</span>
+                                <small class="text-muted">28 Sep 2025</small>
+                            </div>
+                            <h5 class="card-title">Setting Realistic Financial Goals</h5>
+                            <p class="card-text text-muted small">A step-by-step guide to creating achievable financial goals and staying on track to meet them.</p>
+                            <a href="#" class="btn btn-sm btn-link p-0">Read Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-primary btn-lg">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="zoom-in">
+                    <i class="bi bi-envelope-fill display-4 mb-3"></i>
+                    <h2 class="display-5 fw-bold mb-3">Stay Informed</h2>
+                    <p class="lead mb-4">Subscribe to our monthly newsletter for expert insights, market updates, and financial planning tips – delivered straight to your inbox</p>
+
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-warning btn-lg px-4">Subscribe</button>
+                        </div>
+                    </form>
+
+                    <p class="small mt-3 mb-0 opacity-75">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4">
+                    <img src="assets/images/SF-logo.svg" alt="Sterling Financial" height="60" class="mb-3 logo-white">
+                    <p class="text-white-50">Independent financial advisors helping individuals and businesses achieve their financial goals since 2002.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#retirement" class="text-white-50 text-decoration-none">Retirement Planning</a></li>
+                        <li class="mb-2"><a href="services.html#investment" class="text-white-50 text-decoration-none">Investment Management</a></li>
+                        <li class="mb-2"><a href="services.html#pension" class="text-white-50 text-decoration-none">Pension Advice</a></li>
+                        <li class="mb-2"><a href="services.html#tax" class="text-white-50 text-decoration-none">Tax Planning</a></li>
+                        <li class="mb-2"><a href="services.html#estate" class="text-white-50 text-decoration-none">Estate Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="about.html#team" class="text-white-50 text-decoration-none">Our Team</a></li>
+                        <li class="mb-2"><a href="resources.html" class="text-white-50 text-decoration-none">Resources</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Information</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            123 Financial Street, London EC2N 4AY
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <a href="tel:02012345678" class="text-white-50 text-decoration-none">020 1234 5678</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <a href="mailto:info@sterlingfinancial.co.uk" class="text-white-50 text-decoration-none">info@sterlingfinancial.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 mt-4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 class="text-gold mb-3">Important Information & Regulatory Notice</h6>
+                        <p class="small text-white-50 mb-3">
+                            <strong>Sterling Financial Advisors Ltd</strong> is authorised and regulated by the Financial Conduct Authority (FCA).
+                            FCA Firm Reference Number: <strong>123456</strong>. You can verify our registration on the
+                            <a href="https://register.fca.org.uk/" class="text-gold" target="_blank" rel="noopener">FCA Register</a>.
+                        </p>
+                        <p class="small text-white-50 mb-3">
+                            The content provided on this website is for informational and educational purposes only. The value of investments can go down as well as up, and you may get back less than you invested. Past performance is not a reliable indicator of future results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-3 mt-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="small text-white-50 mb-2 mb-md-0">© 2025 Sterling Financial Advisors Ltd. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-center text-md-end mb-0">
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Privacy Policy</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Terms & Conditions</a></li>
+                            <li class="list-inline-item">|</li>
+                            <li class="list-inline-item"><a href="#" class="small text-white-50 text-decoration-none">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.8 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Retirement Calculator
+        function calculateRetirement() {
+            const currentAge = parseInt(document.getElementById('currentAge').value);
+            const retirementAge = parseInt(document.getElementById('retirementAge').value);
+            const currentSavings = parseFloat(document.getElementById('currentSavings').value);
+            const monthlyContribution = parseFloat(document.getElementById('monthlyContribution').value);
+
+            const years = retirementAge - currentAge;
+            const months = years * 12;
+            const monthlyRate = 0.05 / 12; // 5% annual rate
+
+            // Future value calculation
+            const futureValueCurrent = currentSavings * Math.pow(1 + (0.05), years);
+            const futureValueContributions = monthlyContribution * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
+            const totalFund = futureValueCurrent + futureValueContributions;
+
+            document.getElementById('resultAmount').textContent = '<span class="pound">&pound;</span>' + Math.round(totalFund).toLocaleString();
+            document.getElementById('retirementResult').style.display = 'block';
+        }
+
+        // Mortgage Calculator
+        function updateDeposit(value) {
+            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value);
+            const depositAmount = (propertyPrice * value / 100);
+
+            document.getElementById('depositPercent').textContent = value + '%';
+            document.getElementById('depositAmount').textContent = Math.round(depositAmount).toLocaleString();
+        }
+
+        function calculateMortgage() {
+            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value);
+            const depositPercent = parseFloat(document.getElementById('deposit').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value);
+            const term = parseInt(document.getElementById('mortgageTerm').value);
+
+            const deposit = propertyPrice * (depositPercent / 100);
+            const loanAmount = propertyPrice - deposit;
+            const monthlyRate = (interestRate / 100) / 12;
+            const numberOfPayments = term * 12;
+
+            // Monthly payment calculation
+            const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) /
+                                   (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+
+            const totalRepayable = monthlyPayment * numberOfPayments;
+
+            document.getElementById('monthlyPayment').textContent = '<span class="pound">&pound;</span>' + Math.round(monthlyPayment).toLocaleString();
+            document.getElementById('totalRepayable').textContent = Math.round(totalRepayable).toLocaleString();
+            document.getElementById('mortgageResult').style.display = 'block';
+        }
+
+        // Initialize deposit display
+        updateDeposit(document.getElementById('deposit').value);
+    </script>
+</body>
+</html>
